@@ -136,6 +136,11 @@
     padding-inline: 24px;
   }
 
+  .delivery-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
   .delivery-title {
     font-size: 36px;
     line-height: 44px;
@@ -165,11 +170,6 @@
     font-size: 28px;
     line-height: 34px;
     letter-spacing: -1px;
-  }
-
-  .delivery-layout {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 28px;
   }
 
   .delivery-info-title {
