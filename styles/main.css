@@ -346,7 +346,13 @@ body {
   text-align: center;
 }
 
-.header-cart > img,
+.header-cart > img {
+  display: block;
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+}
+
 .header-menu-toggle {
   display: none;
 }
