@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Домашняя студия звукозаписи — Studio Module</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/studio.css" />
+    <script src="/scripts/header.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="/assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="/contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="/delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="/" class="header-logo">
+            <img src="/assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="/cart.html"
+            ><img src="/assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="/account.html">Войти/Регистрация</a>
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="/">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/about.html">О бренде</a>
+              </li>
+              <li>
+                <a
+                  class="active header-nav-link"
+                  href="/studio.html"
+                  aria-current="page"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="/inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="/"
+          ><img src="/assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="/">Главная</a></li>
+          <li><a class="header-menu-link" href="/about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="/studio.html" aria-current="page"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="/delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/account.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="/cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="studio container">
+      <header class="studio-intro">
+        <span class="studio-kicker">Блог</span>
+        <h1 class="studio-title">Домашняя студия звукозаписи</h1>
+        <p class="studio-welcome">
+          Добро пожаловать в блог — вашу главную мастерскую знаний о домашней
+          звукозаписи.
+        </p>
+        <p class="studio-description">
+          Мы знаем, как сложно бывает начать: куча проводов, непонятные термины,
+          акустика, которая «гудит». Наш блог создан, чтобы расставить всё по
+          полочкам. Здесь вы найдёте не просто обзоры, а
+          <strong class="studio-description-accent"
+            >понятные пошаговые руководства:</strong
+          >
+          как обустроить студию в квартире, выбрать первую звуковую карту,
+          правильно поставить мониторы, записать вокал и свести трек так, чтобы
+          он зазвучал профессионально.
+        </p>
+      </header>
+      <nav class="studio-categories" aria-label="Категории блога">
+        <a
+          class="active studio-category-link studio-link"
+          href="/studio.html"
+          aria-current="page"
+          >Все</a
+        >
+        <a
+          class="studio-category-link studio-link"
+          href="/studio.html?category=home-studio"
+          >Домашняя студия</a
+        >
+        <a
+          class="studio-category-link studio-link"
+          href="/studio.html?category=recording"
+          >Звукозапись</a
+        >
+        <a
+          class="studio-category-link studio-link"
+          href="/studio.html?category=creativity"
+          >Творчество</a
+        >
+      </nav>
+      <nav class="studio-pagination" aria-label="Страницы блога перед статьями">
+        <span class="studio-page-disabled" aria-hidden="true">←</span>
+        <a
+          class="studio-page active studio-pagination-link studio-link"
+          href="/studio.html"
+          aria-current="page"
+          aria-label="Страница 1"
+          >1</a
+        >
+        <a
+          class="studio-page studio-pagination-link studio-link"
+          href="/studio.html?page=2"
+          aria-label="Страница 2"
+          >2</a
+        >
+        <a
+          class="studio-page-next studio-pagination-link studio-link"
+          href="/studio.html?page=2"
+          aria-label="Следующая страница"
+          >→</a
+        >
+      </nav>
+      <ul class="studio-posts">
+        <li class="studio-post">
+          <article class="studio-card">
+            <a
+              class="studio-card-image-link studio-link"
+              href="/articles/monitors-or-headphones.html"
+              aria-label="Мониторы или наушники? Где начинать сведение и запись, если бюджет ограничен"
+            >
+              <img
+                class="studio-card-image"
+                src="/assets/images/1a68051358853f5e4ac6263c0b4046acaec2bf2c.png"
+                alt="Мониторы или наушники? Где начинать сведение и запись, если бюджет ограничен"
+                loading="lazy"
+              />
+            </a>
+            <div class="studio-card-content">
+              <div class="studio-card-meta">
+                <span class="studio-card-category">Домашняя студия</span>
+                <time datetime="2026-08-05">05.08.2026</time>
+                <span class="studio-meta-item">admin</span>
+                <span class="studio-meta-item">Нет комментариев</span>
+              </div>
+              <h2 class="studio-card-title">
+                <a
+                  class="studio-card-title-link studio-link"
+                  href="/articles/monitors-or-headphones.html"
+                  >Мониторы или наушники? Где начинать сведение и запись, если
+                  бюджет ограничен</a
+                >
+              </h2>
+              <p class="studio-card-excerpt">
+                Из этой статьи вы узнаете, на каком оборудовании стоит начать
+                сведение и запись своей музыки, если бюджет ограничен. Мы
+                разберём сильные и слабые стороны мониторов и наушников, дадим
+                практические советы по работе в стеснённых финансовых условиях и
+                объясним, как сделать осознанный выбор, который поможет
+                развивать вашу домашнюю студию в духе Studio Module —
+                эффективно, грамотно и без […]
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="studio-post">
+          <article class="studio-card">
+            <a
+              class="studio-card-image-link studio-link"
+              href="/articles/chord-progressions.html"
+              aria-label="Аккорды для своих песен: 25 популярных последовательностей"
+            >
+              <img
+                class="studio-card-image"
+                src="/assets/images/d025d859eed09db75d0503b2aa6d748de7121e20.png"
+                alt="Аккорды для своих песен: 25 популярных последовательностей"
+                loading="lazy"
+              />
+            </a>
+            <div class="studio-card-content">
+              <div class="studio-card-meta">
+                <span class="studio-card-category">Творчество</span>
+                <time datetime="2026-06-04">04.06.2026</time>
+                <span class="studio-meta-item">admin</span>
+                <span class="studio-meta-item">Нет комментариев</span>
+              </div>
+              <h2 class="studio-card-title">
+                <a
+                  class="studio-card-title-link studio-link"
+                  href="/articles/chord-progressions.html"
+                  >Аккорды для своих песен: 25 популярных последовательностей</a
+                >
+              </h2>
+              <p class="studio-card-excerpt">
+                Аккорды для своих песен: 25 популярных последовательностей в
+                тональности Ля-минор (Am). Одна из самых частых проблем
+                начинающего автора — с чего начать сочинение музыки. Готовая
+                аккордовая прогрессия — это идеальный фундамент. Она задаёт
+                настроение, ритм и структуру, поверх которой можно напевать
+                мелодии и писать текст. Поэтому в этой статье мы собрали 25
+                проверенных и популярных […]
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="studio-post">
+          <article class="studio-card">
+            <a
+              class="studio-card-image-link studio-link"
+              href="/articles/recording-drums.html"
+              aria-label="Как записать барабаны дома: живая установка или электронная?"
+            >
+              <img
+                class="studio-card-image"
+                src="/assets/images/1b5774243e916546a7b7aa8357537699d1c88831.png"
+                alt="Как записать барабаны дома: живая установка или электронная?"
+                loading="lazy"
+              />
+            </a>
+            <div class="studio-card-content">
+              <div class="studio-card-meta">
+                <span class="studio-card-category">Звукозапись</span>
+                <time datetime="2026-05-25">25.05.2026</time>
+                <span class="studio-meta-item">admin</span>
+                <span class="studio-meta-item">Нет комментариев</span>
+              </div>
+              <h2 class="studio-card-title">
+                <a
+                  class="studio-card-title-link studio-link"
+                  href="/articles/recording-drums.html"
+                  >Как записать барабаны дома: живая установка или
+                  электронная?</a
+                >
+              </h2>
+              <p class="studio-card-excerpt">
+                Из этой статьи вы узнаете всё, что нужно для записи мощных и
+                чистых ударных в домашней студии. Мы не просто сравним живые и
+                электронные барабаны, а разберём, какой путь идеально подходит
+                для вашего помещения, бюджета и жанра. Вы получите конкретные
+                схемы расстановки микрофонов, техники записи MIDI и практические
+                советы, которые помогут сделать профессиональный звук […]
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="studio-post">
+          <article class="studio-card">
+            <a
+              class="studio-card-image-link studio-link"
+              href="/articles/home-studio-guide.html"
+              aria-label="Как обустроить домашнюю студию с нуля: Пошаговый гайд"
+            >
+              <img
+                class="studio-card-image"
+                src="/assets/images/d025d859eed09db75d0503b2aa6d748de7121e20.png"
+                alt="Как обустроить домашнюю студию с нуля: Пошаговый гайд"
+                loading="lazy"
+              />
+            </a>
+            <div class="studio-card-content">
+              <div class="studio-card-meta">
+                <span class="studio-card-category">Домашняя студия</span>
+                <time datetime="2026-03-27">27.03.2026</time>
+                <span class="studio-meta-item">admin</span>
+                <span class="studio-meta-item">Нет комментариев</span>
+              </div>
+              <h2 class="studio-card-title">
+                <a
+                  class="studio-card-title-link studio-link"
+                  href="/articles/home-studio-guide.html"
+                  >Как обустроить домашнюю студию с нуля: Пошаговый гайд</a
+                >
+              </h2>
+              <p class="studio-card-excerpt">
+                Обустраиваем домашнюю студию звукозаписи: Твой первый шаг к
+                творчеству. Мечтать о собственной домашней студии звукозаписи —
+                это нормально, но главное — начать действовать. Многие думают,
+                что для этого нужны огромные деньги и специальное образование.
+                Правда в том, что создать свою творческую базу дома сегодня
+                проще, чем когда-либо. Главное — не ждать идеального момента, а
+                начать […]
+              </p>
+            </div>
+          </article>
+        </li>
+        <li class="studio-post">
+          <article class="studio-card">
+            <a
+              class="studio-card-image-link studio-link"
+              href="/articles/studio-furniture.html"
+              aria-label="Зачем нужна правильная мебель для студии звукозаписи?"
+            >
+              <img
+                class="studio-card-image"
+                src="/assets/images/1b5774243e916546a7b7aa8357537699d1c88831.png"
+                alt="Зачем нужна правильная мебель для студии звукозаписи?"
+                loading="lazy"
+              />
+            </a>
+            <div class="studio-card-content">
+              <div class="studio-card-meta">
+                <span class="studio-card-category">Домашняя студия</span>
+                <time datetime="2026-06-19">19.06.2026</time>
+                <span class="studio-meta-item">admin</span>
+                <span class="studio-meta-item">Нет комментариев</span>
+              </div>
+              <h2 class="studio-card-title">
+                <a
+                  class="studio-card-title-link studio-link"
+                  href="/articles/studio-furniture.html"
+                  >Зачем нужна правильная мебель для студии звукозаписи?</a
+                >
+              </h2>
+              <p class="studio-card-excerpt">
+                Сколько часов вы проводите за рабочим местом? «Сколько времени
+                вы реально проводите за рабочим местом?» — вопрос, на который
+                большинство музыкантов, звукорежиссёров и продюсеров честно
+                ответят: «Больше, чем хотелось бы». Сведение, аранжировка,
+                запись вокала, редактирование MIDI-партий, мастеринг — каждая из
+                этих задач требует сосредоточенности и времени. Часовые сессии
+                редкость. Обычно речь идёт о 4–6 часах […]
+              </p>
+            </div>
+          </article>
+        </li>
+      </ul>
+      <nav class="studio-pagination" aria-label="Страницы блога после статей">
+        <span class="studio-page-disabled" aria-hidden="true">←</span>
+        <a
+          class="studio-page active studio-pagination-link studio-link"
+          href="/studio.html"
+          aria-current="page"
+          aria-label="Страница 1"
+          >1</a
+        >
+        <a
+          class="studio-page studio-pagination-link studio-link"
+          href="/studio.html?page=2"
+          aria-label="Страница 2"
+          >2</a
+        >
+        <a
+          class="studio-page-next studio-pagination-link studio-link"
+          href="/studio.html?page=2"
+          aria-label="Следующая страница"
+          >→</a
+        >
+      </nav>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="/">
+            <img
+              class="footer-logo-image"
+              src="/assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/studio.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>

@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Доставка и Оплата — Studio Module</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/delivery.css" />
+    <script src="/scripts/header.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="/assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="/contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="/delivery.html" aria-current="page"
+            >Доставка и Оплата</a
+          >
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="/" class="header-logo">
+            <img src="/assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="/cart.html"
+            ><img src="/assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="/account.html">Войти/Регистрация</a>
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="/">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/about.html">О бренде</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/studio.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="/inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="/"
+          ><img src="/assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="/">Главная</a></li>
+          <li><a class="header-menu-link" href="/about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="/studio.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a
+              class="header-menu-link"
+              href="/delivery.html"
+              aria-current="page"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/account.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="/cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="delivery container">
+      <header class="delivery-header">
+        <h1 class="delivery-title">Доставка и Оплата</h1>
+      </header>
+      <div class="delivery-layout">
+        <section class="delivery-info" aria-labelledby="delivery-info-title">
+          <h2 class="delivery-info-title" id="delivery-info-title">
+            Как получить нашу продукцию
+          </h2>
+          <p class="delivery-intro">
+            Мы, Studio Module, стараемся сделать процесс получения вашего заказа
+            максимально комфортным, где бы вы ни находились.
+          </p>
+          <div class="delivery-methods">
+            <section
+              class="delivery-method"
+              aria-labelledby="delivery-moscow-title"
+            >
+              <h3 class="delivery-method-title" id="delivery-moscow-title">
+                <span class="delivery-method-icon" aria-hidden="true">🚚</span>
+                Доставка по Москве
+              </h3>
+              <p class="delivery-text">
+                <strong class="delivery-text-label">Курьером:</strong> Доставим
+                до двери. Стоимость — 500 ₽ (бесплатно при заказе от 15 000 ₽).
+              </p>
+              <p class="delivery-text">
+                <strong class="delivery-text-label">Сроки:</strong> Как правило,
+                доставляем на следующий день или через день. При условии наличия
+                товара. Свяжитесь с нами! Некоторые товары производятся только
+                под заказ, обычно это занимает около 2 недель.
+              </p>
+            </section>
+            <section
+              class="delivery-method"
+              aria-labelledby="delivery-russia-title"
+            >
+              <h3 class="delivery-method-title" id="delivery-russia-title">
+                <span class="delivery-method-icon" aria-hidden="true">🇷🇺</span>
+                Доставка по России
+              </h3>
+              <p class="delivery-text">
+                Мы отправляем товары во все города России проверенными
+                транспортными службами (СДЭК, Деловые Линии).
+              </p>
+            </section>
+            <section
+              class="delivery-method"
+              aria-labelledby="delivery-cost-title"
+            >
+              <h3 class="delivery-method-title" id="delivery-cost-title">
+                Расчет стоимости
+              </h3>
+              <p class="delivery-text">
+                Точная цена доставки отобразится при оформлении заказа. Вы
+                сможете выбрать наиболее удобный для вас пункт выдачи.
+              </p>
+            </section>
+            <section
+              class="delivery-method"
+              aria-labelledby="delivery-shipping-title"
+            >
+              <h3 class="delivery-method-title" id="delivery-shipping-title">
+                Отправка
+              </h3>
+              <p class="delivery-text">
+                Мы упаковываем заказ очень надежно и отправляем его в течение
+                1–2 дней после получения оплаты. Трек-номер для отслеживания
+                придет вам на почту или в SMS.
+              </p>
+            </section>
+          </div>
+        </section>
+        <div class="delivery-payment-card">
+          <section
+            class="delivery-payment"
+            aria-labelledby="delivery-payment-title"
+          >
+            <h2 class="delivery-card-title" id="delivery-payment-title">
+              Оплата на сайте
+            </h2>
+            <p class="delivery-text">
+              Мы принимаем оплату онлайн, это быстро и безопасно:
+            </p>
+            <ul class="delivery-payment-methods">
+              <li class="delivery-payment-method">
+                Пластиковые карты (МИР, Visa, Mastercard)
+              </li>
+              <li class="delivery-payment-method">
+                Перевод по СБП (часто это самый быстрый способ)
+              </li>
+            </ul>
+          </section>
+          <section
+            class="delivery-refund"
+            aria-labelledby="delivery-refund-title"
+          >
+            <h2 class="delivery-card-title" id="delivery-refund-title">
+              Возврат денежных средств
+            </h2>
+            <p class="delivery-text">
+              Если по какой-то причине вам не подошел товар или потребовался
+              возврат, мы вернем деньги тем же способом, которым вы платили.
+              Обратите внимание: обработка платежа банком может занять до 10
+              рабочих дней. Как только мы получим подтверждение от банка, вы
+              сразу же увидите средства на своем счету.
+            </p>
+            <p class="delivery-text">
+              По всем вопросам возврата пишите нам на почту:
+              <a class="delivery-email-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="/">
+            <img
+              class="footer-logo-image"
+              src="/assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/studio.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>

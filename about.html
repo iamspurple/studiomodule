@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О бренде — Studio Module</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/about.css" />
+    <script src="/scripts/header.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="/assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="/contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="/delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="/" class="header-logo">
+            <img src="/assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="/cart.html"
+            ><img src="/assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="/account.html">Войти/Регистрация</a>
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="/">Главная</a>
+              </li>
+              <li>
+                <a
+                  class="active header-nav-link"
+                  href="/about.html"
+                  aria-current="page"
+                  >О бренде</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="/studio.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="/inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="/"
+          ><img src="/assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="/">Главная</a></li>
+          <li>
+            <a class="header-menu-link" href="/about.html" aria-current="page"
+              >О бренде</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/studio.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="/delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/account.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="/cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="about container">
+      <section class="about-intro" aria-labelledby="about-title">
+        <span class="section-kicker">О бренде</span>
+        <h1 class="about-title" id="about-title">О Studio Module</h1>
+        <p class="about-text about-intro-description">
+          Studio Module: Студия, созданная музыкантами для музыкантов
+        </p>
+      </section>
+
+      <section class="about-story" aria-labelledby="story-title">
+        <div class="about-story-content">
+          <h2 class="about-heading" id="story-title">
+            Когда личная необходимость рождает решение
+          </h2>
+          <p class="about-text about-story-description">
+            Поиск идеального стола для домашней студии часто заканчивается
+            разочарованием. Офисная мебель не учитывает специфику работы,
+            профессиональные решения стоят целое состояние, а провода
+            превращаются в хаотичную паутину. Именно из этой личной боли и
+            родился STUDIO MODULE. Не найдя на рынке того, что было нужно нам
+            самим, мы решили создать это — функциональное, эргономичное и
+            вдохновляющее пространство для творчества. Так начался путь от
+            личной мастерской к философии, которая легла в основу целого бренда.
+          </p>
+        </div>
+        <img
+          class="about-story-image"
+          src="/assets/images/about.png"
+          alt="Студийный стол Studio Module с музыкальным оборудованием"
+        />
+      </section>
+
+      <section class="about-philosophy" aria-labelledby="philosophy-title">
+        <div class="about-section-header">
+          <span class="about-kicker">Философия</span>
+          <h2 class="about-heading" id="philosophy-title">
+            Наша философия: три принципа, на которых строится всё
+          </h2>
+          <p class="about-text about-section-description">
+            Мы не просто производим мебель. Мы создаём среду для рождения
+            музыки. Всё, что мы делаем, подчинено трём фундаментальным
+            принципам.
+          </p>
+        </div>
+        <ol class="about-principles">
+          <li class="about-principle">
+            <span class="about-number" aria-hidden="true">01</span>
+            <h3 class="about-principle-title">
+              Принцип 1: Studio Module — студия, которая растет вместе с тобой!
+            </h3>
+            <p class="about-text about-principle-description">
+              Мы верим, что творческий путь — это постоянная эволюция. Сегодня у
+              вас минимальный набор, завтра — целый парк аппаратуры. Наша
+              экосистема модульна: вы начинаете со стола, добавляете рэковую
+              стойку, потом — тумбу и целую рэковую колонну. Ваше пространство
+              трансформируется без лишних затрат, адаптируясь под ваш рост. Мы
+              продаём не предметы, а возможность бесшовного развития.
+            </p>
+          </li>
+          <li class="about-principle">
+            <span class="about-number" aria-hidden="true">02</span>
+            <h3 class="about-principle-title">
+              Принцип 2: Studio Module — когда студия твой дом, а не просто
+              скучное рабочее место!
+            </h3>
+            <p class="about-text about-principle-description">
+              Студия — это святилище, где проводят часы вдохновения и поиска.
+              Она должна быть психологически комфортной, эргономически удобной и
+              отражать вашу личность. Мы выступаем против безликой
+              утилитарности. Наша система кастомизации, внимание к дизайну и
+              материалам работают на одну цель — чтобы вам хотелось возвращаться
+              в это пространство. Чтобы это было местом силы, вашим творческим
+              домом.
+            </p>
+          </li>
+          <li class="about-principle">
+            <span class="about-number" aria-hidden="true">03</span>
+            <h3 class="about-principle-title">
+              Принцип 3: Studio Module — стильно! Удобно! Для тебя!
+            </h3>
+            <p class="about-text about-principle-description">
+              Это наше прямое обещание.
+            </p>
+            <ul class="about-promises">
+              <li class="about-promise">
+                <strong class="about-promise-title">Стильно</strong> — потому
+                что мы против «гаражной» эстетики и безликой утилитарности. Мы
+                верим, что профессионализм в искусстве и красоте неразделимы.
+              </li>
+              <li class="about-promise">
+                <strong class="about-promise-title">Удобно</strong> — потому что
+                каждый миллиметр продуман из опыта реальной работы. Провода
+                спрятаны, всё необходимое под рукой, эргономика бережёт
+                здоровье.
+              </li>
+              <li class="about-promise">
+                <strong class="about-promise-title">Для тебя</strong> — это
+                главное. Мы решаем проблемы, с которыми столкнулись сами. Мы —
+                такие же музыканты, как и вы.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section class="about-ecosystem" aria-labelledby="ecosystem-title">
+        <div class="about-section-header">
+          <span class="about-kicker">Экосистема</span>
+          <h2 class="about-heading" id="ecosystem-title">
+            Что мы создаём? Экосистема, воплощающая философию
+          </h2>
+          <p class="about-text about-section-description">
+            Наши продукты — это материальное выражение наших принципов.
+          </p>
+        </div>
+        <ol class="about-products">
+          <li class="about-product">
+            <span class="about-number" aria-hidden="true">01</span>
+            <h3 class="about-product-title">
+              Удобные функциональные столы — основа роста.
+            </h3>
+            <p class="about-text about-product-description">
+              Это станции со встроенным кабель-менеджментом, сетевыми фильтрами
+              и продуманной эргономикой. Их модульная конструкция из профильной
+              трубы 60×30 мм и ЛДСП Egger — это фундамент, который растёт вместе
+              с вами.
+            </p>
+          </li>
+          <li class="about-product">
+            <span class="about-number" aria-hidden="true">02</span>
+            <h3 class="about-product-title">
+              Рэковые решения — сердце аппаратной студии.
+            </h3>
+            <p class="about-text about-product-description">
+              От компактных настольных стоек на несколько юнитов до мощных
+              напольных тумб на 36U. Наши направляющие и фирменные заглушки —
+              это проявление подхода «Стильно! Удобно!», превращающего
+              техническую необходимость в элемент дизайна.
+            </p>
+          </li>
+          <li class="about-product">
+            <span class="about-number" aria-hidden="true">03</span>
+            <h3 class="about-product-title">
+              Системы хранения и аксессуары: порядок как часть процесса.
+            </h3>
+            <p class="about-text about-product-description">
+              Комоды с бесшумными ящиками, акустические панели, стойки для
+              мониторов — всё, чтобы каждая деталь имела своё место, а рабочая
+              поверхность дышала. Это воплощение принципа дома, где всему есть
+              свой угол.
+            </p>
+          </li>
+          <li class="about-product">
+            <span class="about-number" aria-hidden="true">04</span>
+            <h3 class="about-product-title">
+              Цветовая палитра: кульминация принципа «Для тебя».
+            </h3>
+            <p class="about-text about-product-description">
+              7 цветов ЛДСП, 7 оттенков металла, 7 вариантов окантовки (в столах
+              и тумбах с её использованием). Сотни комбинаций для создания
+              пространства, которое будет уникальным отражением вашего стиля.
+              Это не опция, а суть нашего подхода — ваша студия должна быть
+              вашей.
+            </p>
+          </li>
+        </ol>
+        <p class="about-closing about-text">
+          И конечно, мы будем расширять модельный ряд! Мы готовы слушать ваши
+          пожелания и замечания.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="/">
+            <img
+              class="footer-logo-image"
+              src="/assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/studio.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>

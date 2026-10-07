@@ -1,0 +1,705 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/homepage.css" />
+    <script src="/scripts/faq.js" defer></script>
+    <script src="/scripts/header.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="/assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="/contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="/delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="/" class="header-logo">
+            <img src="/assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="/cart.html"
+            ><img src="/assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="/account.html">Войти/Регистрация</a>
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="active header-nav-link" href="/">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/about.html">О бренде</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/studio.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="/inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="/"
+          ><img src="/assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li>
+            <a class="header-menu-link" href="/" aria-current="page">Главная</a>
+          </li>
+          <li><a class="header-menu-link" href="/about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="/studio.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="/delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/account.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="/cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="main container">
+      <section class="hero">
+        <div class="hero-content">
+          <span class="hero-kicker kicker">Функциональная мебель</span>
+          <h1 class="hero-title">
+            Studio Module — студия, которая
+            <span class="accent"
+              >растет вместе <span class="nowrap">с тобой!</span></span
+            >
+          </h1>
+          <p class="hero-description">
+            Мы создаём мебель для домашних студий звукозаписи. Столы, рэковые
+            стойки, комоды, тумбы и подставки для мониторов — всё, чтобы ваше
+            рабочее пространство было удобным, красивым и функциональным. Без
+            компромиссов.
+          </p>
+          <a href="/catalog.html" class="hero-link"> Перейти в каталог </a>
+        </div>
+        <div class="hero-media">
+          <img class="hero-image" src="/assets/images/hero_bg.png" alt="" />
+        </div>
+      </section>
+      <section class="hero-benefits" aria-label="Преимущества Studio Module">
+        <ul class="hero-benefits-list">
+          <li class="hero-benefits-item">
+            <img src="/assets/icons/check-in-circle.svg" alt="" />
+            <span>Премиальное качество</span>
+          </li>
+          <li class="hero-benefits-item">
+            <img src="/assets/icons/grid.svg" alt="" />
+            <span>Продуманный дизайн</span>
+          </li>
+          <li class="hero-benefits-item">
+            <img src="/assets/icons/house.svg" alt="" />
+            <span>Для дома и студии</span>
+          </li>
+          <li class="hero-benefits-item">
+            <img src="/assets/icons/delivery.svg" alt="" />
+            <span>Быстрая доставка</span>
+          </li>
+        </ul>
+      </section>
+      <section class="approach">
+        <div class="approach-header section-header">
+          <span class="approach-kicker section-kicker"> О подходе </span>
+          <h2 class="approach-title section-title">
+            3 кита философии Studio Module
+          </h2>
+        </div>
+
+        <ul class="approach-list">
+          <li class="approach-item">
+            <img
+              class="approach-item-icon"
+              src="/assets/icons/cube-in-circle.svg"
+              alt=""
+            />
+            <h3 class="approach-item-title">Модульность</h3>
+            <p class="approach-item-description">
+              Собирайте систему под себя. Настольные рэки, подставки, тумбы и
+              комоды легко комбинируются и масштабируются.
+            </p>
+          </li>
+          <li class="approach-item">
+            <img
+              class="approach-item-icon"
+              src="/assets/icons/check-shield-in-circle.svg"
+              alt=""
+            />
+            <h3 class="approach-item-title">Качество</h3>
+            <p class="approach-item-description">
+              ЛДСП Egger с 2-мм ABS кромкой, порошковая краска Royal.
+            </p>
+          </li>
+          <li class="approach-item">
+            <img
+              class="approach-item-icon"
+              src="/assets/icons/sun-in-circle.svg"
+              alt=""
+            />
+            <h3 class="approach-item-title">Кастомизация</h3>
+            <p class="approach-item-description">
+              7 цветов ЛДСП + 7 цветов металла. Создайте студию, которая
+              выглядит именно так, как вы хотите.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="collection">
+        <div class="collection-header section-header">
+          <span class="collection-kicker section-kicker"> Коллекция </span>
+          <h2 class="collection-title section-title">Популярные товары</h2>
+        </div>
+        <ul class="collection-list">
+          <li class="collection-item">
+            <a class="collection-item-link" href="/catalog.html">
+              <img
+                src="/assets/images/fd0973a338b49fec494867a20eb61c91d067331b.png"
+                alt="Studio Module HSD-61 — студийный стол"
+                class="collection-item-image"
+                loading="lazy"
+              />
+              <div class="collection-item-content">
+                <span class="collection-item-category">Студийный стол</span>
+                <h3 class="collection-item-title">Studio Module HSD-61</h3>
+                <p class="collection-item-description">
+                  Студийный стол с выдвижным лотком для MIDI-клавиатуры на 61
+                  клавишу. 4 кабельных прохода и кабельный лоток для аккуратной
+                  укладки проводов.
+                </p>
+                <span class="collection-item-more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="collection-item">
+            <a class="collection-item-link" href="/catalog.html">
+              <img
+                src="/assets/images/527f0615e6b514dcae48767b565e88564336e390.png"
+                alt="Studio Module TR-42U — настольный рэк"
+                class="collection-item-image"
+                loading="lazy"
+              />
+              <div class="collection-item-content">
+                <span class="collection-item-category">Настольный рэк</span>
+                <h3 class="collection-item-title">Studio Module TR-42U</h3>
+                <p class="collection-item-description">
+                  Двухсторонний настольный рэк для максимально эффективного
+                  использования рабочего пространства. Передняя часть вмещает 4
+                  юнита оборудования.
+                </p>
+                <span class="collection-item-more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="collection-item">
+            <a class="collection-item-link" href="/catalog.html">
+              <img
+                src="/assets/images/6440ef49ea5591a6b184c13f75a9711495a9ec1e.png"
+                alt="Studio Module TAST — подставки под мониторы"
+                class="collection-item-image"
+                loading="lazy"
+              />
+              <div class="collection-item-content">
+                <span class="collection-item-category"
+                  >Подставки под мониторы</span
+                >
+                <h3 class="collection-item-title">Studio Module TAST</h3>
+                <p class="collection-item-description">
+                  Телескопическая подставка с дискретной регулировкой: точная
+                  настройка высоты для комфортного звукорежиссера и его студии.
+                </p>
+                <span class="collection-item-more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="collection-item">
+            <a class="collection-item-link" href="/catalog.html">
+              <img
+                src="/assets/images/708b971a8761913f3507d395cec829f56b8ea917.png"
+                alt="Studio Module TR22-4U — настольный рэк"
+                class="collection-item-image"
+                loading="lazy"
+              />
+              <div class="collection-item-content">
+                <span class="collection-item-category">Настольный рэк</span>
+                <h3 class="collection-item-title">Studio Module TR22-4U</h3>
+                <p class="collection-item-description">
+                  Настольный рэковый модуль, который используется как подставка
+                  под графический монитор. Подходит для самых необходимых
+                  приборов.
+                </p>
+                <span class="collection-item-more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="collection-item">
+            <a class="collection-item-link" href="/catalog.html">
+              <img
+                src="/assets/images/5b71ecac219623d10966e7e1226f8208ed4ffbfa.png"
+                alt="Studio Module ST-142NAS — приставная тумба"
+                class="collection-item-image"
+                loading="lazy"
+              />
+              <div class="collection-item-content">
+                <span class="collection-item-category">Приставная тумба</span>
+                <h3 class="collection-item-title">Studio Module ST-142NAS</h3>
+                <p class="collection-item-description">
+                  Студийная приставная тумба с отсеком для NAS-хранилища,
+                  рэковыми секциями и выдвижным ящиком для оборудования.
+                </p>
+                <span class="collection-item-more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+          <li class="collection-item">
+            <a class="collection-item-link" href="/catalog.html">
+              <img
+                src="/assets/images/c44e7fc44d5617fd80a35e693de10a1e61876a4a.png"
+                alt="Studio Module FRS-204 — напольный рэк"
+                class="collection-item-image"
+                loading="lazy"
+              />
+              <div class="collection-item-content">
+                <span class="collection-item-category">Напольный рэк</span>
+                <h3 class="collection-item-title">Studio Module FRS-204</h3>
+                <p class="collection-item-description">
+                  Напольный рэк с наклонной фронтальной панелью, секциями для
+                  оборудования и выдвижными ящиками для аксессуаров.
+                </p>
+                <span class="collection-item-more">Подробнее</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="users">
+        <div class="users-wrapper">
+          <div class="users-header section-header">
+            <span class="users-kicker section-kicker">
+              Studio Module для вас
+            </span>
+            <h2 class="users-title section-title">
+              Мебель для всех, кто создаёт музыку
+            </h2>
+            <p class="users-description section-description">
+              Если вы занимаетесь музыкой и вам нужно удобное рабочее место? То
+              мебель от Studio Module — это то решение, которое позволит вам
+              создать не только комфортное рабочее пространство, но и стильное
+              интерьерное решение.
+            </p>
+          </div>
+          <ul class="users-list">
+            <li class="users-item">
+              <img
+                class="users-item-image"
+                src="/assets/images/1a68051358853f5e4ac6263c0b4046acaec2bf2c.png"
+                alt="Домашние и проджект студии"
+                loading="lazy"
+              />
+              <div class="users-item-content">
+                <h3 class="users-item-title">
+                  Домашние и проджект<br />студии
+                </h3>
+                <p class="users-item-description">
+                  Вы записываете вокал, сводите треки или пишете аранжировки
+                  дома. Вам нужен стол для домашней студии, который не занимает
+                  полкомнаты, но даёт всё необходимое.
+                </p>
+              </div>
+            </li>
+            <li class="users-item">
+              <img
+                class="users-item-image"
+                src="/assets/images/d025d859eed09db75d0503b2aa6d748de7121e20.png"
+                alt="Музыканты и аранжировщики"
+                loading="lazy"
+              />
+              <div class="users-item-content">
+                <h3 class="users-item-title">Музыканты и<br />аранжировщики</h3>
+                <p class="users-item-description">
+                  Вам важен инструмент — MIDI-клавиатура. Выдвижной стол под
+                  MIDI-клавиатуру, чтобы инструмент всегда был под рукой, но не
+                  мешал.
+                </p>
+              </div>
+            </li>
+            <li class="users-item">
+              <img
+                class="users-item-image"
+                src="/assets/images/1b5774243e916546a7b7aa8357537699d1c88831.png"
+                alt="Продюсеры и звукорежиссеры"
+                loading="lazy"
+              />
+              <div class="users-item-content">
+                <h3 class="users-item-title">
+                  Продюсеры и<br />звукорежиссеры
+                </h3>
+                <p class="users-item-description">
+                  У вас много рэкового оборудования. Нужен студийный стол для
+                  звукозаписи, который выдержит нагрузку и позволит организовать
+                  всё аккуратно.
+                </p>
+              </div>
+            </li>
+            <li class="users-item">
+              <img
+                class="users-item-image"
+                src="/assets/images/20b0dd2887135c3c77966a37b3a1e9d8f27430c3.png"
+                alt="Битмейкеры и электронщики"
+                loading="lazy"
+              />
+              <div class="users-item-content">
+                <h3 class="users-item-title">Битмейкеры и<br />электронщики</h3>
+                <p class="users-item-description">
+                  Вы работаете в DAW, у вас семплеры, драм-машины, контроллеры.
+                  Вам нужен функциональный рабочий стол, где хватит места для
+                  всего.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="faq-wrapper">
+          <div class="faq-header section-header">
+            <span class="faq-kicker section-kicker">Частые вопросы</span>
+            <h2 class="faq-title section-title">FAQ</h2>
+            <p class="faq-description section-description">
+              Ответы на популярные вопросы о материалах, кастомизации и
+              доставке.
+            </p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-item-title">
+                <span class="faq-item-icon" aria-hidden="true"></span>Какие
+                материалы использует Studio Module?
+              </summary>
+              <div class="faq-item-wrapper">
+                <p class="faq-item-text">
+                  ЛДСП Egger с 2-мм кромкой ABS, порошковая краска Royal. Только
+                  проверенные европейские и российские поставщики.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title">
+                <span class="faq-item-icon" aria-hidden="true"></span>Можно ли
+                заказать мебель нестандартного цвета?
+              </summary>
+              <div class="faq-item-wrapper">
+                <p class="faq-item-text">
+                  Доступны 7 цветов ЛДСП и 7 цветов металла. Если вы хотите
+                  другой цвет, свяжитесь с нами, чтобы обсудить возможность
+                  изготовления.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title">
+                <span class="faq-item-icon" aria-hidden="true"></span>Подходит
+                ли мебель для небольших комнат?
+              </summary>
+              <div class="faq-item-wrapper">
+                <p class="faq-item-text">
+                  Модульная система позволяет подобрать мебель под ваше
+                  пространство. Настольные рэки, подставки и тумбы можно
+                  комбинировать и добавлять по мере необходимости.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title">
+                <span class="faq-item-icon" aria-hidden="true"></span>Как
+                заказать и есть ли доставка?
+              </summary>
+              <div class="faq-item-wrapper">
+                <p class="faq-item-text">
+                  Выберите мебель в каталоге и оформите заказ через корзину.
+                  Доставляем по России. Подробные условия — на странице
+                  <a class="faq-item-link" href="/delivery.html"
+                    >«Доставка и Оплата»</a
+                  >.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title">
+                <span class="faq-item-icon" aria-hidden="true"></span>Можно ли
+                собрать мебель самостоятельно?
+              </summary>
+              <div class="faq-item-wrapper">
+                <p class="faq-item-text">
+                  Возможность самостоятельной сборки зависит от выбранной
+                  модели. Свяжитесь с нами перед заказом — поможем уточнить
+                  порядок сборки и необходимые инструменты.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="/">
+            <img
+              class="footer-logo-image"
+              src="/assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/studio.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>
