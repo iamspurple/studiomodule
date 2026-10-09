@@ -16,11 +16,6 @@
 
 .about-title {
   margin-top: 16px;
-  font-family: var(--font-accent);
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
-  letter-spacing: -2px;
 }
 
 .about-intro-description {
@@ -222,12 +217,6 @@
     padding-bottom: 48px;
   }
 
-  .about-title {
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: -1.4px;
-  }
-
   .about-intro-description {
     max-width: 680px;
     margin-inline: auto;
@@ -293,12 +282,6 @@
 
   .about-intro {
     padding-bottom: 40px;
-  }
-
-  .about-title {
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: -1px;
   }
 
   .about-intro-description {

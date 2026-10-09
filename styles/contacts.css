@@ -9,11 +9,6 @@
 
 .contacts-title {
   margin-top: 16px;
-  font-family: var(--font-accent);
-  font-size: 42px;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: -1.7px;
 }
 
 .contacts-layout {
@@ -141,12 +136,6 @@
     padding-inline: 24px;
   }
 
-  .contacts-title {
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: -1.2px;
-  }
-
   .contacts-layout {
     gap: 32px;
   }
@@ -169,12 +158,6 @@
 
   .contacts-header {
     margin-bottom: 32px;
-  }
-
-  .contacts-title {
-    font-size: 28px;
-    line-height: 34px;
-    letter-spacing: -1px;
   }
 
   .contacts-layout {

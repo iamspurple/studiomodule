@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Контакты и Сервис — Studio Module</title>
+    <title>Регистрация — Studio Module</title>
     <link rel="stylesheet" href="/styles/main.css" />
-    <link rel="stylesheet" href="/styles/contacts.css" />
+    <link rel="stylesheet" href="/styles/auth.css" />
     <script src="/scripts/header.js" defer></script>
+    <script src="/scripts/auth.js" defer></script>
   </head>
   <body id="top">
     <div class="header-top">
@@ -21,9 +22,8 @@
         </a>
         <nav class="header-top-nav">
           <a
-            class="contacts-top-link header-top-link"
+            class="header-top-link"
             href="/contacts.html"
-            aria-current="page"
             >Контакты и Сервис</a
           >
           <a class="header-top-link" href="/delivery.html">Доставка и Оплата</a>
@@ -217,7 +217,6 @@
             <a
               class="header-menu-link"
               href="/contacts.html"
-              aria-current="page"
               >Контакты и Сервис</a
             >
           </li>
@@ -234,119 +233,51 @@
         <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
       </div>
     </dialog>
-    <main class="contacts container">
-      <header class="contacts-header">
-        <span class="contacts-kicker section-kicker">Контакты и Сервис</span>
-        <h1 class="page-title contacts-title">Контакты и Сервис</h1>
+    <main class="auth auth-registration-page container">
+      <header class="auth-header">
+        <span class="section-kicker">Личный кабинет</span>
+        <h1 class="page-title auth-title" id="auth-title">Регистрация</h1>
       </header>
-      <div class="contacts-layout">
-        <section class="contacts-info" aria-labelledby="contacts-info-title">
-          <h2 class="contacts-info-title" id="contacts-info-title">
-            Как с нами связаться
-          </h2>
-          <p class="contacts-description">
-            Мы готовы ответить на ваши вопросы по телефону и в мессенджерах
-            каждый день с 10:00 до 20:00
-          </p>
-          <dl class="contacts-channels">
-            <div class="contacts-channel">
-              <dt class="contacts-channel-label">Телефон</dt>
-              <dd class="contacts-channel-value">
-                <a class="contacts-channel-link" href="tel:+79250009892"
-                  >+7 (925) 000-98-92</a
-                >
-                <span class="contacts-channel-note"
-                  >(Ежедневно, с 10:00 до 20:00)</span
-                >
-              </dd>
-            </div>
-            <div class="contacts-channel">
-              <dt class="contacts-channel-label">Электронная почта</dt>
-              <dd class="contacts-channel-value">
-                <a
-                  class="contacts-channel-link"
-                  href="mailto:info@studiomodule.ru"
-                  >info@studiomodule.ru</a
-                >
-                <span class="contacts-channel-note"
-                  >(Для общих вопросов и сотрудничества)</span
-                >
-              </dd>
-            </div>
-          </dl>
-        </section>
-        <div class="contacts-details">
-          <section
-            class="contacts-details-section"
-            aria-labelledby="company-details-title"
-          >
-            <h2 class="contacts-details-title" id="company-details-title">
-              Реквизиты компании
-            </h2>
-            <dl class="contacts-details-list">
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">Наименование:</dt>
-                <dd class="contacts-detail-value">ООО «БОЛЬШОЙ МУЗЫКАЛЬНЫЙ»</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">ИНН:</dt>
-                <dd class="contacts-detail-value">7714449411</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">КПП:</dt>
-                <dd class="contacts-detail-value">771401001</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">ОГРН:</dt>
-                <dd class="contacts-detail-value">1197746471493</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">Юридический адрес:</dt>
-                <dd class="contacts-detail-value">
-                  123007, город Москва, 2-й Хорошёвский пр-д, д. 7 стр. 14, эт 2
-                  пом VII ком 26
-                </dd>
-              </div>
-            </dl>
-          </section>
-          <section
-            class="contacts-details-section contacts-details-section-bank"
-            aria-labelledby="bank-details-title"
-          >
-            <h2 class="contacts-details-title" id="bank-details-title">
-              Банковские реквизиты
-            </h2>
-            <dl class="contacts-details-list">
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">Наименование банка:</dt>
-                <dd class="contacts-detail-value">АО «ТБанк»</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">ИНН банка:</dt>
-                <dd class="contacts-detail-value">7710140679</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">БИК:</dt>
-                <dd class="contacts-detail-value">044525974</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">Расчетный счет:</dt>
-                <dd class="contacts-detail-value">40702810210002059719</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">Корреспондентский счет:</dt>
-                <dd class="contacts-detail-value">30101810145250000974</dd>
-              </div>
-              <div class="contacts-detail-row">
-                <dt class="contacts-detail-label">Юридический адрес банка:</dt>
-                <dd class="contacts-detail-value">
-                  127287, г. Москва, ул. Хуторская 2-я, д. 38А, стр. 26
-                </dd>
-              </div>
-            </dl>
-          </section>
+      <form class="auth-form auth-form-registration" aria-labelledby="auth-title" method="post" data-auth-mode="registration">
+        <div class="auth-field">
+          <label class="auth-label" for="auth-name">Имя</label>
+          <input class="auth-input" id="auth-name" name="name" type="text" autocomplete="given-name" required />
+          <p class="auth-error" id="auth-name-error" aria-live="polite" hidden></p>
         </div>
-      </div>
+        <div class="auth-field">
+          <label class="auth-label" for="auth-phone">Номер телефона</label>
+          <input class="auth-input" id="auth-phone" name="phone" type="tel" autocomplete="tel" required />
+          <p class="auth-error" id="auth-phone-error" aria-live="polite" hidden></p>
+        </div>
+        <div class="auth-field">
+          <label class="auth-label" for="auth-email">Email</label>
+          <input class="auth-input" id="auth-email" name="email" type="email" autocomplete="email" autocapitalize="none" spellcheck="false" required />
+          <p class="auth-error" id="auth-email-error" aria-live="polite" hidden></p>
+        </div>
+        <div class="auth-field">
+          <label class="auth-label" for="auth-password">Пароль</label>
+          <div class="auth-password">
+            <input class="auth-input" id="auth-password" name="password" type="password" autocomplete="new-password" minlength="8" aria-describedby="auth-password-hint" required />
+            <button class="auth-password-toggle" type="button" aria-controls="auth-password" aria-label="Показать пароль" aria-pressed="false">Показать</button>
+          </div>
+          <p class="auth-error" id="auth-password-error" aria-live="polite" hidden></p>
+          <p class="auth-hint" id="auth-password-hint">Минимум 8 символов.</p>
+        </div>
+        <div class="auth-field">
+          <label class="auth-label" for="auth-password-confirm">Повторить пароль</label>
+          <div class="auth-password">
+            <input class="auth-input" id="auth-password-confirm" name="password_confirmation" type="password" autocomplete="new-password" minlength="8" required />
+            <button class="auth-password-toggle" type="button" aria-controls="auth-password-confirm" aria-label="Показать повторный пароль" aria-pressed="false">Показать</button>
+          </div>
+          <p class="auth-error" id="auth-password-confirm-error" aria-live="polite" hidden></p>
+        </div>
+        <button class="auth-submit" type="submit">Зарегистрироваться</button>
+        <p class="auth-status" role="status" hidden></p>
+        <div class="auth-registration">
+          <p>Уже есть аккаунт?</p>
+          <a class="auth-register" href="/auth.html">Войти</a>
+        </div>
+      </form>
     </main>
     <footer class="footer">
       <div class="footer-wrapper container">

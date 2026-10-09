@@ -732,6 +732,30 @@ body:has(.header-menu[open]) {
   text-transform: uppercase;
 }
 
+.page-title {
+  font-family: var(--font-accent);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -1.7px;
+}
+
+@media (max-width: 1024px) {
+  .page-title {
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.2px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-title {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+}
+
 .footer {
   padding-block: 64px 22px;
   background-color: var(--black);
