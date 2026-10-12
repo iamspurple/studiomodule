@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина — Studio Module</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/cart.css" />
+    <script src="/scripts/header.js" defer></script>
+    <script src="/scripts/cart.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="/assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="/contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="/delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="/" class="header-logo">
+            <img src="/assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="/cart.html" aria-current="page"
+            ><img src="/assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">3</span></a
+          >
+          <a class="header-account" href="/auth.html"
+            >Войти/Регистрация</a
+          >
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="/">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/about.html">О бренде</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/studio.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="/inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="/"
+          ><img src="/assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="/">Главная</a></li>
+          <li><a class="header-menu-link" href="/about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="/studio.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="/delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/auth.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="/cart.html" aria-current="page">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="cart container">
+      <header class="cart-header">
+        <h1 class="page-title">Корзина</h1>
+      </header>
+      <div class="cart-layout">
+        <ul class="cart-items" aria-label="Товары в корзине">
+          <li class="cart-item" data-product="hsd-61" data-price="45000">
+            <img class="cart-item-image" src="/assets/images/fd0973a338b49fec494867a20eb61c91d067331b.png" alt="Studio Module HSD-61" width="116" height="102" />
+            <div class="cart-item-info">
+              <h2 class="cart-item-title">Studio Module HSD-61</h2>
+              <p class="cart-unit-price">45 000 ₽</p>
+              <div class="cart-quantity" role="group" aria-label="Количество: Studio Module HSD-61">
+                <button class="cart-quantity-button" type="button" data-action="decrease" aria-label="Уменьшить количество: Studio Module HSD-61" disabled>−</button>
+                <input class="cart-quantity-input" type="number" min="1" max="99" step="1" value="1" aria-label="Количество: Studio Module HSD-61" />
+                <button class="cart-quantity-button" type="button" data-action="increase" aria-label="Увеличить количество: Studio Module HSD-61">+</button>
+              </div>
+            </div>
+            <p class="cart-item-total" aria-label="Стоимость: Studio Module HSD-61">45 000 ₽</p>
+            <button class="cart-remove" type="button" data-action="remove" aria-label="Удалить из корзины: Studio Module HSD-61">×</button>
+          </li>
+          <li class="cart-item" data-product="hsd-61-desk" data-price="45000">
+            <img class="cart-item-image" src="/assets/images/fd0973a338b49fec494867a20eb61c91d067331b.png" alt="Studio Module HSD-61 студийный стол" width="116" height="102" />
+            <div class="cart-item-info">
+              <h2 class="cart-item-title">Studio Module HSD-61 студийный стол</h2>
+              <p class="cart-unit-price">45 000 ₽</p>
+              <div class="cart-quantity" role="group" aria-label="Количество: Studio Module HSD-61 студийный стол">
+                <button class="cart-quantity-button" type="button" data-action="decrease" aria-label="Уменьшить количество: Studio Module HSD-61 студийный стол" disabled>−</button>
+                <input class="cart-quantity-input" type="number" min="1" max="99" step="1" value="1" aria-label="Количество: Studio Module HSD-61 студийный стол" />
+                <button class="cart-quantity-button" type="button" data-action="increase" aria-label="Увеличить количество: Studio Module HSD-61 студийный стол">+</button>
+              </div>
+            </div>
+            <p class="cart-item-total" aria-label="Стоимость: Studio Module HSD-61 студийный стол">45 000 ₽</p>
+            <button class="cart-remove" type="button" data-action="remove" aria-label="Удалить из корзины: Studio Module HSD-61 студийный стол">×</button>
+          </li>
+          <li class="cart-item" data-product="tr-82u" data-price="10000">
+            <img class="cart-item-image" src="/assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-82U настольный рэк" width="116" height="102" />
+            <div class="cart-item-info">
+              <h2 class="cart-item-title">Studio Module TR-82U настольный рэк</h2>
+              <p class="cart-unit-price">10 000 ₽</p>
+              <div class="cart-quantity" role="group" aria-label="Количество: Studio Module TR-82U настольный рэк">
+                <button class="cart-quantity-button" type="button" data-action="decrease" aria-label="Уменьшить количество: Studio Module TR-82U настольный рэк" disabled>−</button>
+                <input class="cart-quantity-input" type="number" min="1" max="99" step="1" value="1" aria-label="Количество: Studio Module TR-82U настольный рэк" />
+                <button class="cart-quantity-button" type="button" data-action="increase" aria-label="Увеличить количество: Studio Module TR-82U настольный рэк">+</button>
+              </div>
+            </div>
+            <p class="cart-item-total" aria-label="Стоимость: Studio Module TR-82U настольный рэк">10 000 ₽</p>
+            <button class="cart-remove" type="button" data-action="remove" aria-label="Удалить из корзины: Studio Module TR-82U настольный рэк">×</button>
+          </li>
+        </ul>
+        <section class="cart-summary" aria-labelledby="cart-summary-title">
+          <h2 class="cart-summary-title" id="cart-summary-title">Сумма корзины</h2>
+          <details class="cart-coupon">
+            <summary>Добавить купоны</summary>
+            <div class="cart-coupon-wrapper">
+              <form class="cart-coupon-form">
+                <label for="cart-coupon-code">Код купона</label>
+                <input id="cart-coupon-code" name="coupon" type="text" placeholder="Введите код купона" required />
+                <button class="cart-coupon-submit" type="submit">Применить</button>
+              </form>
+            </div>
+          </details>
+          <dl class="cart-totals">
+            <div class="cart-total-row">
+              <dt>Подытог</dt>
+              <dd data-cart-subtotal>100 000 ₽</dd>
+            </div>
+            <div class="cart-total-row cart-shipping">
+              <dt>Доставка по России</dt>
+              <dd>Рассчитывается при оформлении</dd>
+            </div>
+            <div class="cart-total-row cart-grand-total">
+              <dt>Предполагаемый итог</dt>
+              <dd data-cart-total>100 000 ₽</dd>
+            </div>
+          </dl>
+          <a class="cart-checkout" href="/checkout.html">Перейти к оформлению заказа</a>
+        </section>
+      </div>
+      <div class="cart-actions">
+        <a class="cart-clear" href="/cart-empty.html">Очистить корзину</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="/">
+            <img
+              class="footer-logo-image"
+              src="/assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/studio.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>
