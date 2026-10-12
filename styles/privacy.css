@@ -1,0 +1,122 @@
+.privacy {
+  padding-block: 72px;
+}
+
+.privacy-document {
+  max-width: 820px;
+  margin-inline: auto;
+  padding: 44px 52px 52px;
+  border: 1px solid #e4e2e8;
+  border-radius: 14px;
+  background-color: white;
+  box-shadow: 0 12px 32px #25202f04;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.privacy-header {
+  margin-bottom: 36px;
+}
+
+.privacy-company {
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+.privacy-updated {
+  margin-top: 10px;
+  color: #77747e;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 22px;
+}
+
+.privacy-updated time {
+  font-weight: 400;
+}
+
+.privacy-section + .privacy-section {
+  margin-top: 36px;
+}
+
+.privacy-section h2 {
+  margin-bottom: 16px;
+  font-family: var(--font-accent);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+}
+
+.privacy-section ul {
+  display: grid;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.privacy-section li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.privacy-section li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--primary);
+}
+
+.privacy-section strong {
+  font-weight: 700;
+}
+
+.privacy-section a {
+  color: var(--primary);
+  overflow-wrap: anywhere;
+}
+
+.privacy-section a:hover {
+  text-decoration: underline;
+}
+
+.privacy-section a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1024px) {
+  .privacy {
+    padding-block: 56px;
+  }
+
+  .privacy-document {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 767px) {
+  .privacy {
+    padding: 40px 16px 56px;
+  }
+
+  .privacy-document {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .privacy-header {
+    margin-bottom: 28px;
+  }
+
+  .privacy-company {
+    margin-top: 20px;
+  }
+
+  .privacy-section + .privacy-section {
+    margin-top: 28px;
+  }
+}

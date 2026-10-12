@@ -1,0 +1,35 @@
+.warranty-kicker {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.warranty .privacy-section p + p {
+  margin-top: 12px;
+}
+
+.warranty-steps {
+  display: grid;
+  gap: 8px;
+  padding-left: 26px;
+  list-style: decimal;
+}
+
+.warranty-steps li {
+  padding-left: 0;
+}
+
+.warranty-steps li::before {
+  content: none;
+}
+
+.warranty-note {
+  margin-top: 20px;
+}
+
+.footer-link[href="/warranty.html"][aria-current="page"] {
+  color: var(--primary);
+}
