@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн генератор аккордов — Harmony Inspiration</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/harmony-inspiration.css" />
+    <script src="/scripts/header.js" defer></script>
+    <script src="/scripts/faq.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="/assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="/contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="/delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="/" class="header-logo">
+            <img src="/assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="/cart.html"
+            ><img src="/assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="/auth.html">Войти/Регистрация</a>
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="/">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/about.html">О бренде</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/studio.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header-nav-link active"
+                  href="/inspiration.html"
+                  aria-current="page"
+                >
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="/"
+          ><img src="/assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="/">Главная</a></li>
+          <li><a class="header-menu-link" href="/about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="/studio.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-menu-link"
+              href="/inspiration.html"
+              aria-current="page"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="/delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/auth.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="/cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="harmony container">
+      <nav class="harmony-breadcrumbs" aria-label="Хлебные крошки">
+        <a href="/">Главная</a><span aria-hidden="true">/</span>
+        <a href="/inspiration.html">Твоё вдохновение</a><span aria-hidden="true">/</span>
+        <span aria-current="page">Harmony Inspiration</span>
+      </nav>
+      <header class="harmony-header">
+        <p class="harmony-category">Твоё вдохновение</p>
+        <h1 class="page-title">Онлайн генератор аккордов</h1>
+      </header>
+      <div class="harmony-layout">
+        <div class="harmony-preview">
+          <img src="/assets/images/inspiration1.png" alt="Интерфейс Harmony Inspiration: настройки тональности, темпа, генерация аккордов и экспорт MIDI" width="770" height="858" />
+        </div>
+        <section class="harmony-info" aria-labelledby="harmony-info-title">
+          <h2 id="harmony-info-title">Более 250'000'000<br />комбинаций аккордов</h2>
+          <div class="harmony-description">
+            <p>Забудьте слова тех, кто считает, что в музыке всё уже написано. Перед вами онлайн-инструмент, который навсегда избавит вас от творческого кризиса. Он не пишет музыку за вас — он дарит вдохновение. Всего пара кликов отделяет вас от создания новой уникальной композиции.</p>
+            <p>Не верьте тем кто говорит что нот всего 7. Сочетаний этих нот несметное множество. Музыка это многомерный мир и цифрой 7 его могут измерить только форменные дилетанты!</p>
+            <p>В ваших руках бесплатный инструмент, который даст вам неисчерпаемое количество вариантов аккордов для ваших песен! Пользуйтесь!</p>
+          </div>
+          <div class="harmony-details">
+            <details class="faq-item">
+              <summary class="faq-item-title"><span class="faq-item-icon" aria-hidden="true"></span>Творческий кризис и решение проблемы</summary>
+              <div class="faq-item-wrapper"><p class="faq-item-text">Попробуйте новую аккордовую прогрессию как отправную точку. Измените ритм, добавьте мелодию и выберите сочетание, которое подойдёт вашей музыкальной идее.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title"><span class="faq-item-icon" aria-hidden="true"></span>Интуитивный интерфейс и кастомизация</summary>
+              <div class="faq-item-wrapper"><p class="faq-item-text">На панели генератора доступны выбор тональности и лада, темпа, количества аккордов и их длительности. Настройки помогают искать гармонию под настроение композиции.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title"><span class="faq-item-icon" aria-hidden="true"></span>Как начать за 4 простых шага</summary>
+              <div class="faq-item-wrapper"><p class="faq-item-text">Выберите настройки, нажмите «Сгенерировать аккорды», прослушайте результат и скачайте MIDI для дальнейшей работы в своей музыкальной программе.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title"><span class="faq-item-icon" aria-hidden="true"></span>Возможности и теория</summary>
+              <div class="faq-item-wrapper"><p class="faq-item-text">Исследуйте сочетания аккордов и слушайте, как меняется настроение гармонии. Используйте результат как основу и развивайте его собственными музыкальными решениями.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-item-title"><span class="faq-item-icon" aria-hidden="true"></span>Функции и экспорт в DAW</summary>
+              <div class="faq-item-wrapper"><p class="faq-item-text">MIDI позволяет продолжить работу с прогрессией в DAW: назначить инструмент, отредактировать ноты, изменить ритм и создать аранжировку.</p></div>
+            </details>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="/">
+            <img
+              class="footer-logo-image"
+              src="/assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/studio.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>

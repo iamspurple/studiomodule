@@ -301,104 +301,6 @@
   line-height: 21px;
 }
 
-.faq-item {
-  border-top: 1px solid #eceaf0;
-}
-
-.faq-item:last-child {
-  border-bottom: 1px solid #eceaf0;
-}
-
-.faq-item-title {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 20px 8px 20px 0;
-  list-style: none;
-  font-size: 15px;
-  font-weight: 600;
-  line-height: 24px;
-  cursor: pointer;
-}
-
-.faq-item-title::-webkit-details-marker {
-  display: none;
-}
-
-.faq-item-icon {
-  position: relative;
-  flex: 0 0 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: var(--primary);
-}
-
-.faq-item-icon::before,
-.faq-item-icon::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 10px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: white;
-  transform: translate(-50%, -50%);
-}
-
-.faq-item-icon::after {
-  transform: translate(-50%, -50%) rotate(90deg);
-  transition:
-    transform 240ms ease,
-    opacity 240ms ease;
-}
-
-.faq-item[data-expanded="true"] .faq-item-icon::after,
-.faq-item[open]:not([data-expanded]) .faq-item-icon::after {
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(0deg);
-}
-
-.faq-item-title::after {
-  content: "";
-  flex: 0 0 10px;
-  height: 10px;
-  margin-left: auto;
-  border-right: 1.5px solid #55525c;
-  border-bottom: 1.5px solid #55525c;
-  transform: translateY(-3px) rotate(45deg);
-  transition: transform 280ms ease;
-}
-
-.faq-item[data-expanded="true"] > .faq-item-title::after,
-.faq-item[open]:not([data-expanded]) > .faq-item-title::after {
-  transform: translateY(3px) rotate(225deg);
-}
-
-.faq-item-title:focus-visible {
-  outline: 2px solid var(--primary);
-  outline-offset: 3px;
-  border-radius: 4px;
-}
-
-.faq-item-wrapper {
-  overflow: hidden;
-  padding: 0 48px 22px;
-}
-
-.faq-item-text {
-  color: #6b6b73;
-  font-size: 13px;
-  line-height: 21px;
-}
-
-.faq-item-link {
-  color: var(--primary);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-
 .hero-benefits {
   margin-top: -64px;
 }
@@ -672,22 +574,6 @@
     max-width: 280px;
     font-size: 12px;
     line-height: 18px;
-  }
-
-  .faq-item-title {
-    gap: 18px;
-    padding-block: 20px;
-    font-size: 13px;
-    line-height: 18px;
-  }
-
-  .faq-item-icon {
-    flex-basis: 20px;
-    height: 20px;
-  }
-
-  .faq-item-wrapper {
-    padding-inline: 38px 18px;
   }
 }
 

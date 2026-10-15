@@ -1,0 +1,135 @@
+.harmony {
+  margin-block: 68px 96px;
+}
+
+.harmony-breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.harmony-breadcrumbs a,
+.harmony-breadcrumbs > [aria-hidden] {
+  color: #77747e;
+}
+
+.harmony-breadcrumbs a:hover {
+  color: var(--primary);
+}
+
+.harmony-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.harmony-category {
+  margin-bottom: 12px;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.harmony-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: start;
+  gap: 56px;
+}
+
+.harmony-preview {
+  overflow: hidden;
+  padding: 14px;
+  border: 1px solid #e4e2e8;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 16px 32px #25202f08;
+}
+
+.harmony-preview img {
+  display: block;
+  width: 100%;
+  border-radius: 9px;
+}
+
+.harmony-info h2 {
+  margin-bottom: 20px;
+  font-family: var(--font-accent);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: -1px;
+}
+
+.harmony-description {
+  display: grid;
+  gap: 14px;
+  color: #77747e;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.harmony-description p:first-child {
+  color: #55515e;
+}
+
+.harmony-details {
+  margin-top: 28px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .harmony {
+    margin-block: 40px 72px;
+    padding-inline: 24px;
+  }
+
+  .harmony-layout {
+    gap: 28px;
+  }
+
+  .harmony-info h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .harmony {
+    margin-block: 32px 64px;
+    padding-inline: 16px;
+  }
+
+  .harmony-breadcrumbs {
+    gap: 8px;
+    font-size: 11px;
+  }
+
+  .harmony-header {
+    margin-bottom: 28px;
+  }
+
+  .harmony-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
+  }
+
+  .harmony-preview {
+    padding: 10px;
+  }
+
+  .harmony-info h2 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .harmony-description {
+    font-size: 13px;
+    line-height: 22px;
+  }
+}
