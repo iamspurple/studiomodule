@@ -99,11 +99,13 @@ if (authForm) {
       firstInvalid.focus();
       return;
     }
+    if (!isReset && !isRegistration) {
+      window.location.assign('/account.html');
+      return;
+    }
     status.textContent = isReset
       ? status.dataset.successMessage
-      : isRegistration
-      ? 'Регистрация пока недоступна. Попробуйте позже.'
-      : 'Вход пока недоступен. Попробуйте позже.';
+      : 'Регистрация пока недоступна. Попробуйте позже.';
     status.hidden = false;
   });
 }

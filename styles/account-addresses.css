@@ -1,0 +1,261 @@
+.addresses-panel > .account-description {
+  max-width: none;
+  margin-top: 0;
+  font-size: 13px;
+}
+
+.address-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.address-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  border: 1px solid #e4e2e8;
+  border-radius: 10px;
+  scroll-margin-top: 160px;
+}
+
+.address-title {
+  font-family: var(--font-accent);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.address-preview {
+  margin-top: 20px;
+  color: #77747e;
+  font-size: 13px;
+  line-height: 22px;
+  overflow-wrap: anywhere;
+}
+
+.address-recipient {
+  margin-bottom: 6px;
+  color: var(--black);
+  font-weight: 500;
+}
+
+.address-phone {
+  margin-top: 6px;
+}
+
+.address-actions,
+.address-form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.address-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: background-color 180ms ease;
+}
+
+.address-button:hover {
+  background-color: #7418a6;
+}
+
+.address-delete,
+.address-cancel {
+  min-height: 42px;
+  padding: 10px 12px;
+  border: 1px solid #e4e2e8;
+  border-radius: 8px;
+  background-color: white;
+  color: #77747e;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.address-delete:hover {
+  border-color: #b33349;
+  color: #b33349;
+}
+
+.address-cancel:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.address-empty,
+.address-form-hint {
+  margin-top: 16px;
+  color: #77747e;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.address-status {
+  color: #267345;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.address-status:not(:empty) {
+  margin-top: 16px;
+}
+
+body:has(.address-dialog[open]) {
+  overflow: hidden;
+}
+
+.address-dialog {
+  position: fixed;
+  inset: 0;
+  width: min(600px, calc(100% - 32px));
+  max-height: calc(100% - 32px);
+  max-height: calc(100dvh - 32px);
+  margin: auto;
+  padding: 28px;
+  border: 1px solid #e4e2e8;
+  border-radius: 16px;
+  background-color: white;
+  color: var(--black);
+  box-shadow: 0 24px 80px #25202f33;
+  overscroll-behavior: contain;
+}
+
+.address-dialog::backdrop {
+  background-color: #11111180;
+}
+
+.address-dialog[open] {
+  animation: address-appear 180ms ease-out;
+}
+
+.address-dialog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.address-dialog-title {
+  font-family: var(--font-accent);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.7px;
+}
+
+.address-close {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #f8f7fa;
+  color: #77747e;
+}
+
+.address-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 16px;
+  margin-top: 24px;
+}
+
+.address-field--wide {
+  grid-column: 1 / -1;
+}
+
+.address-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.address-field label span {
+  color: var(--primary);
+}
+
+.address-field input {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #dedbe4;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.account button:focus-visible,
+.address-dialog :is(button, input):focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.address-dialog input:focus-visible {
+  outline-offset: 0;
+}
+
+.address-card [hidden] {
+  display: none;
+}
+
+@keyframes address-appear {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .address-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .address-card {
+    padding: 20px;
+  }
+
+  .address-dialog {
+    padding: 24px 20px;
+  }
+
+  .address-dialog-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .address-fields {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .address-dialog[open] {
+    animation: none;
+  }
+}

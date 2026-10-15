@@ -1,0 +1,131 @@
+.profile-forms {
+  display: grid;
+  min-width: 0;
+  gap: 24px;
+}
+
+.profile-fields {
+  display: grid;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.profile-description {
+  margin-top: 12px;
+  color: #77747e;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.profile-field label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.profile-field input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #dedbe4;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.profile-hint {
+  margin-top: 4px;
+  color: #77747e;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.profile-password {
+  position: relative;
+}
+
+.profile-password input {
+  padding-right: 100px;
+}
+
+.profile-password-toggle {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  min-height: 44px;
+  padding-inline: 8px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--primary);
+  font-size: 11px;
+}
+
+.profile-password-toggle:hover {
+  text-decoration: underline;
+}
+
+.profile-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 46px;
+  margin-top: 24px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: background-color 180ms ease;
+}
+
+.profile-submit:hover {
+  background-color: #7418a6;
+}
+
+.profile-status,
+.profile-error {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.profile-status {
+  margin-top: 16px;
+  color: #267345;
+}
+
+.profile-error {
+  margin-top: 4px;
+  color: #b33349;
+}
+
+.profile-field input[aria-invalid="true"] {
+  border-color: #b33349;
+}
+
+.profile-form button:focus-visible,
+.profile-form input:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.profile-form input:focus-visible {
+  outline-offset: 0;
+}
+
+@media (max-width: 767px) {
+  .profile-forms {
+    gap: 16px;
+  }
+
+  .profile-fields {
+    gap: 20px;
+  }
+}

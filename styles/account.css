@@ -1,0 +1,223 @@
+.account-page .header {
+  background-color: #f8f7fa;
+}
+
+.account-page .account-logout {
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  background-color: transparent;
+  color: var(--black);
+}
+
+@media (min-width: 1025px) {
+  .account-page .account-logout {
+    display: inline-flex;
+  }
+}
+
+.account-logout svg {
+  flex-shrink: 0;
+}
+
+.account {
+  min-height: 872px;
+  padding-block: 72px 120px;
+}
+
+.account-header {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.account-title {
+  margin-top: 12px;
+}
+
+.account-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+}
+
+.account-nav,
+.account-panel {
+  border: 1px solid #e4e2e8;
+  border-radius: 16px;
+  background-color: white;
+  box-shadow: 0 12px 32px #25202f08;
+}
+
+.account-nav {
+  padding: 10px;
+}
+
+.account-nav-list {
+  display: grid;
+  gap: 4px;
+}
+
+.account-nav-link {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #39353f;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+
+.account-nav-link:hover {
+  background-color: #faf6fd;
+  color: var(--primary);
+}
+
+.account-nav-link[aria-current="page"] {
+  background-color: var(--primary);
+  color: white;
+}
+
+.account-nav-logout {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e4e2e8;
+  border-radius: 0 0 8px 8px;
+  color: #77747e;
+}
+
+.account-panel {
+  padding: 34px 40px;
+}
+
+.account-panel-title {
+  font-family: var(--font-accent);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.8px;
+}
+
+.account-description {
+  max-width: 660px;
+  margin-top: 16px;
+  color: #77747e;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.account-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.account-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+  padding: 20px 16px;
+  border: 1px solid #e4e2e8;
+  border-radius: 10px;
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.account-card:hover {
+  border-color: var(--primary);
+  background-color: #faf6fd;
+}
+
+.account-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.account-card-description {
+  margin-top: 4px;
+  color: #77747e;
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.account a:focus-visible,
+.account-logout:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1024px) {
+  .account {
+    min-height: 740px;
+    padding-block: 64px 96px;
+  }
+
+  .account-layout {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .account-panel {
+    padding: 28px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .account-page .header-logo {
+    width: 108px;
+    height: 24px;
+  }
+
+  .account-page .header-wrapper {
+    padding-block: 6px;
+  }
+
+  .account {
+    min-height: 0;
+    padding: 52px 16px 72px;
+  }
+
+  .account-header {
+    margin-bottom: 24px;
+  }
+
+  .account-title {
+    font-size: clamp(32px, 10.6vw, 42px);
+    line-height: 52px;
+    letter-spacing: -1.7px;
+  }
+
+  .account-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .account-nav-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .account-nav-link {
+    line-height: 18px;
+  }
+
+  .account-panel {
+    padding: 24px 20px;
+  }
+
+  .account-panel-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .account-description {
+    margin-top: 12px;
+  }
+
+  .account-cards {
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: 32px;
+  }
+}
