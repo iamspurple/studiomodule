@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Module HSD-61 — студийный стол</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/product.css" />
+    <script src="/scripts/header.js" defer></script>
+    <script src="/scripts/product.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="/assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="/contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="/delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="/" class="header-logo">
+            <img src="/assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="/catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="/cart.html"
+            ><img src="/assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="/auth.html">Войти/Регистрация</a>
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="/">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/about.html">О бренде</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="/studio.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a
+                  class="header-nav-link"
+                  href="/inspiration.html"
+                >
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="/"
+          ><img src="/assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="/">Главная</a></li>
+          <li><a class="header-menu-link" href="/about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="/studio.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-menu-link"
+              href="/inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="/catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="/delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="/auth.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="/cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="product container">
+      <nav class="product-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span aria-hidden="true">/</span><a href="/catalog.html">Каталог</a><span aria-hidden="true">/</span><a href="/catalog.html">Студийные столы</a><span aria-hidden="true">/</span><span aria-current="page">Studio Module HSD-61 студийный стол</span></nav>
+      <section class="product-overview" aria-labelledby="product-title">
+        <div class="product-gallery">
+          <img class="product-main-image" id="product-image" src="/assets/images/20d02ee79bc4f4c18ef9587cf82e7e23026466dd.png" alt="Studio Module HSD-61 — студийный стол, ракурс 1" width="513" height="513" />
+          <div class="product-thumbnails" role="group" aria-label="Фотографии товара"><button class="product-thumbnail" type="button" data-image="/assets/images/20d02ee79bc4f4c18ef9587cf82e7e23026466dd.png" aria-label="Показать ракурс 1" aria-pressed="true"><img src="/assets/images/20d02ee79bc4f4c18ef9587cf82e7e23026466dd.png" alt="HSD-61, ракурс 1" /></button><button class="product-thumbnail" type="button" data-image="/assets/images/93ab132028b5d3a9cd593767987ca13734983925.png" aria-label="Показать ракурс 2" aria-pressed="false"><img src="/assets/images/93ab132028b5d3a9cd593767987ca13734983925.png" alt="HSD-61, ракурс 2" /></button><button class="product-thumbnail" type="button" data-image="/assets/images/318a17a36a2fb4bc8730c9dfb8ed17e8e4cd37f7.png" aria-label="Показать ракурс 3" aria-pressed="false"><img src="/assets/images/318a17a36a2fb4bc8730c9dfb8ed17e8e4cd37f7.png" alt="HSD-61, ракурс 3" /></button><button class="product-thumbnail" type="button" data-image="/assets/images/d9748081425cd2ef3db5206e6d9434f7b0654a45.png" aria-label="Показать ракурс 4" aria-pressed="false"><img src="/assets/images/d9748081425cd2ef3db5206e6d9434f7b0654a45.png" alt="HSD-61, ракурс 4" /></button></div>
+        </div>
+        <div class="product-purchase">
+          <h1 id="product-title">Studio Module HSD-61<br />студийный стол</h1>
+          <p class="product-model">Модель: HSD-61</p>
+          <p class="product-price">45 000 ₽</p>
+          <h2 class="product-small-title">Краткое описание</h2>
+          <p class="product-short-description">Студийный стол с выдвижным лотком для MIDI-клавиатуры на 61 клавишу. 4 кабельных прохода и кабельный лоток для аккуратной укладки проводов.</p>
+          <form class="product-order">
+            <fieldset class="product-color"><legend>Цвет корпуса <span data-color-label="wood">Кокоболо</span></legend><div class="product-swatches"><label class="product-swatch" title="Серый"><input type="radio" name="wood" value="Серый" /><span style="--swatch-color: #a0a099" aria-hidden="true"></span><span class="product-swatch-name">Серый</span></label><label class="product-swatch" title="Дуб натуральный"><input type="radio" name="wood" value="Дуб натуральный" /><span style="--swatch-color: #bb9870" aria-hidden="true"></span><span class="product-swatch-name">Дуб натуральный</span></label><label class="product-swatch" title="Кокоболо"><input type="radio" name="wood" value="Кокоболо" checked /><span style="--swatch-color: #8f5d42" aria-hidden="true"></span><span class="product-swatch-name">Кокоболо</span></label><label class="product-swatch" title="Венге"><input type="radio" name="wood" value="Венге" /><span style="--swatch-color: #665150" aria-hidden="true"></span><span class="product-swatch-name">Венге</span></label><label class="product-swatch" title="Графит"><input type="radio" name="wood" value="Графит" /><span style="--swatch-color: #827e7a" aria-hidden="true"></span><span class="product-swatch-name">Графит</span></label><label class="product-swatch" title="Светлый дуб"><input type="radio" name="wood" value="Светлый дуб" /><span style="--swatch-color: #cfbea4" aria-hidden="true"></span><span class="product-swatch-name">Светлый дуб</span></label><label class="product-swatch" title="Орех"><input type="radio" name="wood" value="Орех" /><span style="--swatch-color: #584536" aria-hidden="true"></span><span class="product-swatch-name">Орех</span></label></div></fieldset><fieldset class="product-color"><legend>Цвет металла <span data-color-label="metal">Чёрный</span></legend><div class="product-swatches"><label class="product-swatch" title="Белый"><input type="radio" name="metal" value="Белый" /><span style="--swatch-color: #f4f4ef" aria-hidden="true"></span><span class="product-swatch-name">Белый</span></label><label class="product-swatch" title="Чёрный"><input type="radio" name="metal" value="Чёрный" checked /><span style="--swatch-color: #35263b" aria-hidden="true"></span><span class="product-swatch-name">Чёрный</span></label><label class="product-swatch" title="Серый"><input type="radio" name="metal" value="Серый" /><span style="--swatch-color: #85838b" aria-hidden="true"></span><span class="product-swatch-name">Серый</span></label><label class="product-swatch" title="Графит"><input type="radio" name="metal" value="Графит" /><span style="--swatch-color: #4b4c52" aria-hidden="true"></span><span class="product-swatch-name">Графит</span></label><label class="product-swatch" title="Бежевый"><input type="radio" name="metal" value="Бежевый" /><span style="--swatch-color: #c6b6a0" aria-hidden="true"></span><span class="product-swatch-name">Бежевый</span></label><label class="product-swatch" title="Оливковый"><input type="radio" name="metal" value="Оливковый" /><span style="--swatch-color: #636653" aria-hidden="true"></span><span class="product-swatch-name">Оливковый</span></label><label class="product-swatch" title="Терракотовый"><input type="radio" name="metal" value="Терракотовый" /><span style="--swatch-color: #a45b47" aria-hidden="true"></span><span class="product-swatch-name">Терракотовый</span></label></div></fieldset>
+            <div class="product-order-actions">
+              <div class="product-quantity" role="group" aria-label="Количество товара"><button type="button" data-quantity="decrease" aria-label="Уменьшить количество" disabled>−</button><input type="number" name="quantity" min="1" max="99" value="1" aria-label="Количество" /><button type="button" data-quantity="increase" aria-label="Увеличить количество">+</button></div>
+              <button class="product-add" type="submit">Добавить в корзину</button>
+            </div>
+            <p class="product-order-status" role="status"></p>
+          </form>
+          <h2 class="product-small-title">Преимущества товара</h2>
+          <ul class="product-benefits"><li><img src="/assets/icons/house.svg" alt="" /><div><h3>Рабочее место музыканта</h3><p>Эргономика для MIDI-клавиатуры на 61 клавишу.</p></div></li><li><img src="/assets/icons/grid.svg" alt="" /><div><h3>Выдвижной лоток</h3><p>Клавиатура под рукой, когда она нужна.</p></div></li><li><img src="/assets/icons/check-in-circle.svg" alt="" /><div><h3>Кабельные проходы</h3><p>4 прохода и лоток для коммуникации.</p></div></li><li><img src="/assets/icons/cube.svg" alt="" /><div><h3>Модульная система</h3><p>Совместим с модулями Studio Module.</p></div></li></ul>
+        </div>
+      </section>
+      <div class="product-tabs" role="tablist" aria-label="Информация о товаре"><button id="product-description-tab" type="button" role="tab" aria-selected="true" aria-controls="product-description">Описание</button><button id="product-specifications-tab" type="button" role="tab" aria-selected="false" aria-controls="product-specifications" tabindex="-1">Характеристики</button></div>
+      <article class="product-content" id="product-description" role="tabpanel" aria-labelledby="product-description-tab">
+        <h2>Описание</h2>
+        <h3>Студийный стол HSD-61 Studio Module — эргономика для музыканта с MIDI-клавиатурой.</h3>
+        <p>Вы создаёте мелодии, строите аранжировки или работаете над звуковым дизайном? HSD-61 — студийный стол для музыкантов, композиторов, аранжировщиков и продюсеров. Не размещайте всё на столешнице: клавиатура, рабочее оборудование и кабели получают своё место. HSD-61 создан для тех, кто ценит комфорт, порядок и возможность масштабировать рабочую систему. Высота 800 мм, ширина 1620 мм, глубина 600 мм — пространство для творчества.</p>
+        <section><h2>Кому подходит студийный стол HSD-61</h2>
+          <h3>Для домашних студий</h3><p>Если вы оборудуете рабочее пространство в квартире или доме, то наверняка сталкивались с проблемой обычной компьютерной мебели. Монитор стоит слишком низко, клавиатура занимает основную поверхность, провода свисают с краёв. HSD-61 решает эти задачи: выдвижной лоток освобождает место, а кабельные проходы и лоток помогают организовать коммутацию.</p><p>Это ваше личное пространство для музыки, где всё находится под рукой. Продуманная организация рабочего места помогает сосредоточиться на результате и получать удовольствие от процесса.</p>
+          <h3>Для музыкантов и аранжировщиков</h3><p>Клавиатура на выдвижном лотке становится частью вашего инструментария. Уберите её после работы или выдвиньте для новой музыкальной идеи. На столешнице остаётся место для мониторов, контроллеров и оборудования.</p><p>Гитаристы, пианисты, барабанщики — этот студийный стол поможет собрать удобное рабочее место для записи и создания музыки.</p>
+          <h3>Для продюсеров и звукорежиссёров</h3><p>Сведение и запись требуют максимальной концентрации. Несколько рэков и мониторы размещаются на столешнице, а кабели собраны в лотке. Совместимость с настольными модулями и приставными тумбами позволяет постепенно увеличивать возможности системы.</p>
+          <h3>Для компактных помещений</h3><p>Не у всех есть отдельная комната под студию. HSD-61 имеет глубину всего 600 мм, что позволяет вписать его даже в небольшое помещение. При этом длина 1620 мм оставляет достаточно пространства для оборудования.</p>
+          <h3>Для тех, кто ценит порядок и эстетику</h3><p>Четыре кабельных прохода и вместительный лоток под столешницей собирают всю коммутацию в одном месте. Никаких «паутин» из проводов, ничего не путается под ногами. Система Custom Color предлагает 7 цветов ЛДСП и 7 цветов металлических ножек — стол можно вписать в интерьер.</p>
+        </section>
+        <section><h2>Продуманная эргономика для 61 клавиши</h2><h3>Выдвижной лоток для MIDI-клавиатуры</h3><p>Главная особенность HSD-61 — вместительный выдвижной лоток, спроектированный специально под MIDI-клавиатуру формата 61 клавиша.</p>
+<div class="product-table-wrap product-tray-table"><table class="product-table"><thead><tr><th scope="col">Размеры лотка</th><th scope="col">Значение</th></tr></thead><tbody><tr><th scope="row">Ширина</th><td>1050 мм — подходит для подавляющего большинства 61-клавишных контроллеров</td></tr><tr><th scope="row">Глубина</th><td>336 мм — достаточно места даже для моделей с дополнительными регуляторами</td></tr><tr><th scope="row">Высота до столешницы</th><td>100 мм — комфортный зазор для рук при игре</td></tr></tbody></table></div>
+          <p>Лоток позволяет:</p><ul class="product-checks"><li>Держать клавиатуру на удобной высоте во время работы</li><li>Полностью убирать её под столешницу, когда она не нужна</li><li>Освобождать основную рабочую поверхность для микшера, контроллеров или документов</li></ul><div class="product-table-wrap"><table class="product-table"><thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead><tbody><tr><th scope="row">Высота по столешнице</th><td>800 мм</td></tr><tr><th scope="row">Глубина</th><td>600 мм</td></tr><tr><th scope="row">Ширина (с ножками)</th><td>1620 мм</td></tr></tbody></table></div><p>Эргономичная высота 800 мм обеспечивает комфортную работу за столом сидя, а ширина 1620 мм позволяет разместить всё необходимое оборудование без тесноты.</p>
+        </section>
+        <section><h2>Инженерные решения для чистоты и порядка</h2><h3>Кабельная инфраструктура</h3><p>В студии проводов никогда не бывает мало. HSD-61 спроектирован так, чтобы коммутация не создавала визуальный шум и не мешала работе.</p><p><strong>4 кабельных прохода</strong> — стратегически расположенные отверстия для проводов позволяют аккуратно пропускать кабели от оборудования к компьютеру, аудиоинтерфейсу и блокам питания.</p><p><strong>Кабельный лоток</strong> — специальное пространство для укладки проводов под столешницей. Вся коммутация собрана в одном месте, не свисает пучками и не путается под ногами.</p><p>В результате:</p><ul class="product-checks"><li>Рабочее место выглядит аккуратно и профессионально</li><li>Провода не мешают ногам и не цепляются при движении</li><li>Легко найти нужный кабель при необходимости</li></ul><h3>Максимальная устойчивость</h3><p>Распорка из 25 мм ЛДСП скрепляет ноги стола между собой и обеспечивает:</p><ul class="product-checks"><li>Абсолютную жёсткость конструкции</li><li>Отсутствие люфтов и раскачиваний даже при интенсивной игре на клавиатуре</li><li>Устойчивость при любых нагрузках</li></ul><h3>Бортик на столешнице</h3><p>Задняя часть столешницы оснащена бортиком высотой 25 мм.</p><ul class="product-checks"><li>Предотвращает падение предметов за стол</li><li>Служит упором для студийного монитора или рэковых модулей</li><li>Позволяет устанавливать оборудование вплотную к заднему краю без риска</li></ul></section>
+        <section><h2>Материалы и качество</h2><p>HSD-61 выполнен из тех же премиальных материалов, что и вся продукция Studio Module:</p><dl class="product-materials"><div><dt>Столешница</dt><dd>ЛДСП Egger — устойчивость к царапинам и влаге</dd></div><div><dt>Ножки</dt><dd>Профильная труба с порошковой окраской — прочность и стабильность</dd></div><div><dt>Кромка</dt><dd>ABS 2 мм — защита торцов от сколов и повреждений</dd></div><div><dt>Распорка</dt><dd>25 мм ЛДСП — дополнительная жёсткость конструкции</dd></div></dl></section>
+        <section><h2>Модульность и масштабирование</h2><p>HSD-61 создан как основа для построения студийной системы. На столешнице можно разместить модули Studio Module:</p><ul class="product-checks"><li>Настольные рэки TR — от TR-2U до TR-12-2U</li><li>Настольные подставки под мониторы TAS — TAS-2U, TAS-4U, TAS-6U</li><li>Комбинированные модули TR22-4U, TR23-6U — гибридные решения для максимальной функциональности</li></ul><h3>Варианты компоновки</h3><div class="product-table-wrap"><table class="product-table"><thead><tr><th scope="col">Конфигурация</th><th scope="col">Состав</th></tr></thead><tbody><tr><th scope="row">Минимальная</th><td>HSD-61 + два монитора на подставках TAS-2U</td></tr><tr><th scope="row">Студийная</th><td>HSD-61 + TR-6-2U в центре + TAS-4U по бокам</td></tr><tr><th scope="row">Профессиональная</th><td>HSD-61 + TR-10-2U + два TAS-6U + приставные тумбы ST</td></tr></tbody></table></div></section>
+        <section><h2>Технические характеристики Studio Module HSD-61</h2><div class="product-table-wrap"><table class="product-table"><thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead><tbody><tr><th scope="row">Артикул</th><td>HSD-61</td></tr><tr><th scope="row">Тип</th><td>Студийный стол с выдвижным лотком для MIDI-клавиатуры</td></tr><tr><th scope="row">Высота по столешнице</th><td>800 мм</td></tr><tr><th scope="row">Глубина</th><td>600 мм</td></tr><tr><th scope="row">Ширина (с ножками)</th><td>1620 мм</td></tr><tr><th scope="row">Материал столешницы</th><td>ЛДСП Egger</td></tr><tr><th scope="row">Материал ножек</th><td>Профильная труба с порошковой окраской</td></tr><tr><th scope="row">Материал распорки</th><td>ЛДСП Egger (25 мм)</td></tr><tr><th scope="row">Лоток (Ш×Г×В)</th><td>1050 × 336 × 100 мм</td></tr><tr><th scope="row">Кабельные проходы</th><td>4 шт.</td></tr><tr><th scope="row">Кабельный лоток</th><td>Есть</td></tr><tr><th scope="row">Бортик</th><td>25 мм</td></tr><tr><th scope="row">Цвета</th><td>7 вариантов ЛДСП Egger + 7 цветов порошковой окраски металла</td></tr><tr><th scope="row">Совместимость</th><td>Со всеми модулями Studio Module</td></tr><tr><th scope="row">Страна производства</th><td>Россия</td></tr></tbody></table></div></section>
+        <section><h2>Ваш стиль. Система Custom Color</h2><p>HSD-61, как и вся мебель Studio Module, создаётся под ваш интерьер. Система <strong>Custom Color</strong> позволяет выбрать:</p><ul class="product-checks"><li>7 расцветок ЛДСП Egger для столешницы, распорки и лотка</li><li>7 расцветок порошковой краски Micropul для металлических ножек</li></ul><p>Стол перестаёт быть просто мебелью и становится частью вашего творческого пространства.</p></section>
+        <section><h2>Пример использования: идеальное рабочее место композитора</h2><p>Представьте стол продюсера, работающего с MIDI-аранжировкой и звуковым дизайном.</p><div class="product-example"><p><strong>Основа:</strong> HSD-61</p><p><strong>На столешнице:</strong></p><ul class="product-checks"><li>В центре — настольный рэк TR-6-2U с аудиоинтерфейсом и гитарным процессором</li><li>Слева и справа — TAS-4U со студийными мониторами</li><li>Справа от рэка — небольшой контроллер автоматизации</li></ul><p><strong>В выдвижном лотке:</strong> MIDI-клавиатура на 61 клавишу, готовая к работе в любой момент</p><p><strong>Сбоку от стола:</strong> приставная тумба ST-114 с дополнительным рэковым оборудованием</p></div><p><strong>Результат:</strong> клавиатура всегда под рукой, но не занимает основную поверхность. Мониторы на правильной высоте. Все провода спрятаны в кабельный лоток и проходы. Рабочее место выглядит профессионально и вдохновляет на творчество.</p></section>
+        <section><h2>Преимущества HSD-61</h2><ul class="product-checks product-advantages-list"><li><strong>Специализированный лоток</strong> — для 61-клавишных MIDI-клавиатур</li><li><strong>Продуманная кабельная инфраструктура</strong> — 4 прохода + лоток</li><li><strong>Максимальная устойчивость</strong> — распорка из 25 мм ЛДСП</li><li><strong>Защитный бортик</strong> — ничего не упадёт за стол</li><li><strong>Модульность</strong> — совместим со всей линейкой Studio Module</li><li><strong>Премиальные материалы</strong> — ЛДСП Egger, порошковая окраска</li><li><strong>Индивидуальный стиль</strong> — 7 цветов ЛДСП и 7 цветов металла</li></ul></section>
+        <aside class="product-contact"><h2>Хотите организовать рабочее место, где ничто не отвлекает от музыки?</h2><p>Напишите нам <a href="/contacts.html">в чат</a> или <a href="tel:+79250009892">позвоните</a>. Мы сами музыканты и звукорежиссёры, поэтому отлично понимаем, как должно быть организовано пространство композитора. Расскажите о вашем оборудовании — и мы поможем подобрать идеальную конфигурацию.</p></aside>
+      </article>
+      <section class="product-content product-specifications" id="product-specifications" role="tabpanel" aria-labelledby="product-specifications-tab" hidden><h2>Технические характеристики Studio Module HSD-61</h2><div class="product-table-wrap"><table class="product-table"><thead><tr><th scope="col">Параметр</th><th scope="col">Значение</th></tr></thead><tbody><tr><th scope="row">Артикул</th><td>HSD-61</td></tr><tr><th scope="row">Тип</th><td>Студийный стол с выдвижным лотком для MIDI-клавиатуры</td></tr><tr><th scope="row">Высота по столешнице</th><td>800 мм</td></tr><tr><th scope="row">Глубина</th><td>600 мм</td></tr><tr><th scope="row">Ширина (с ножками)</th><td>1620 мм</td></tr><tr><th scope="row">Материал столешницы</th><td>ЛДСП Egger</td></tr><tr><th scope="row">Материал ножек</th><td>Профильная труба с порошковой окраской</td></tr><tr><th scope="row">Материал распорки</th><td>ЛДСП Egger (25 мм)</td></tr><tr><th scope="row">Лоток (Ш×Г×В)</th><td>1050 × 336 × 100 мм</td></tr><tr><th scope="row">Кабельные проходы</th><td>4 шт.</td></tr><tr><th scope="row">Кабельный лоток</th><td>Есть</td></tr><tr><th scope="row">Бортик</th><td>25 мм</td></tr><tr><th scope="row">Цвета</th><td>7 вариантов ЛДСП Egger + 7 цветов порошковой окраски металла</td></tr><tr><th scope="row">Совместимость</th><td>Со всеми модулями Studio Module</td></tr><tr><th scope="row">Страна производства</th><td>Россия</td></tr></tbody></table></div></section>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="/">
+            <img
+              class="footer-logo-image"
+              src="/assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/studio.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="/account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="/checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>
