@@ -100,7 +100,7 @@ if (authForm) {
       return;
     }
     if (!isReset && !isRegistration) {
-      window.location.assign('/account.html');
+      window.location.assign('./account.html');
       return;
     }
     status.textContent = isReset

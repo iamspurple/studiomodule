@@ -30,6 +30,6 @@
   margin-top: 20px;
 }
 
-.footer-link[href="/warranty.html"][aria-current="page"] {
+.footer-link[href="./warranty.html"][aria-current="page"] {
   color: var(--primary);
 }

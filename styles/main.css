@@ -34,7 +34,7 @@ button {
 
 @font-face {
   font-family: "Inter";
-  src: url(/assets/fonts/Inter/Inter-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/Inter/Inter-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -42,7 +42,7 @@ button {
 
 @font-face {
   font-family: "Inter";
-  src: url(/assets/fonts/Inter/Inter-Medium.woff2) format("woff2");
+  src: url(../assets/fonts/Inter/Inter-Medium.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -50,7 +50,7 @@ button {
 
 @font-face {
   font-family: "Inter";
-  src: url(/assets/fonts/Inter/Inter-SemiBold.woff2) format("woff2");
+  src: url(../assets/fonts/Inter/Inter-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -58,7 +58,7 @@ button {
 
 @font-face {
   font-family: "Inter";
-  src: url(/assets/fonts/Inter/Inter-Bold.woff2) format("woff2");
+  src: url(../assets/fonts/Inter/Inter-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -66,7 +66,7 @@ button {
 
 @font-face {
   font-family: "Inter";
-  src: url(/assets/fonts/Inter/Inter-ExtraBold.woff2) format("woff2");
+  src: url(../assets/fonts/Inter/Inter-ExtraBold.woff2) format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -74,7 +74,7 @@ button {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(/assets/fonts/Montserrat/Montserrat-Regular.woff2) format("woff2");
+  src: url(../assets/fonts/Montserrat/Montserrat-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -82,7 +82,7 @@ button {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(/assets/fonts/Montserrat/Montserrat-Bold.woff2) format("woff2");
+  src: url(../assets/fonts/Montserrat/Montserrat-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -90,7 +90,7 @@ button {
 
 @font-face {
   font-family: "Montserrat";
-  src: url(/assets/fonts/Montserrat/Montserrat-ExtraBold.woff2) format("woff2");
+  src: url(../assets/fonts/Montserrat/Montserrat-ExtraBold.woff2) format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -203,7 +203,7 @@ body {
   width: 1em;
   height: 1em;
   display: inline-block;
-  background: url(/assets/icons/burger.svg) center/contain no-repeat;
+  background: url(../assets/icons/burger.svg) center/contain no-repeat;
 }
 
 .header-catalog-btn::after {
@@ -211,7 +211,7 @@ body {
   width: 1em;
   height: 1em;
   display: inline-block;
-  background: url(/assets/icons/arrow.svg) center/contain no-repeat;
+  background: url(../assets/icons/arrow.svg) center/contain no-repeat;
   transform: rotate(0deg);
   transition: transform 180ms ease;
 }
@@ -273,7 +273,7 @@ body {
   display: inline-block;
   width: 1em;
   height: 1em;
-  background: url(/assets/icons/arrow-right.svg) center/contain no-repeat;
+  background: url(../assets/icons/arrow-right.svg) center/contain no-repeat;
 }
 
 .header-catalog.active .header-catalog-nav {
@@ -302,7 +302,7 @@ body {
   position: absolute;
   top: 15px;
   left: 12px;
-  background: url(/assets/icons/magnifier.svg) center/contain no-repeat;
+  background: url(../assets/icons/magnifier.svg) center/contain no-repeat;
 }
 
 .header-search-input {
@@ -437,8 +437,8 @@ body:has(.header-menu[open]) {
   width: 18px;
   height: 16px;
   background-color: var(--black);
-  mask: url(/assets/icons/burger.svg) center/contain no-repeat;
-  -webkit-mask: url(/assets/icons/burger.svg) center/contain no-repeat;
+  mask: url(../assets/icons/burger.svg) center/contain no-repeat;
+  -webkit-mask: url(../assets/icons/burger.svg) center/contain no-repeat;
 }
 
 .header-menu-close::before,
@@ -907,8 +907,8 @@ html {
   width: 15px;
   height: 15px;
   background-color: var(--primary);
-  mask: url(/assets/icons/arrow.svg) center/contain no-repeat;
-  -webkit-mask: url(/assets/icons/arrow.svg) center/contain no-repeat;
+  mask: url(../assets/icons/arrow.svg) center/contain no-repeat;
+  -webkit-mask: url(../assets/icons/arrow.svg) center/contain no-repeat;
 }
 
 .back-to-top:hover {

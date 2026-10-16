@@ -404,7 +404,7 @@
   left: 0;
   width: 18px;
   height: 18px;
-  background: url('/assets/icons/check-in-circle.svg') center/contain no-repeat;
+  background: url('../assets/icons/check-in-circle.svg') center/contain no-repeat;
 }
 
 .product-materials {
