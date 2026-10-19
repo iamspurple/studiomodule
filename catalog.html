@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Настольные рэки — Studio Module</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/catalog.css" />
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/catalog.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="./assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="./contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="./delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="./" class="header-logo">
+            <img src="./assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="./cart.html" aria-current="page"
+            ><img src="./assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">3</span></a
+          >
+          <a class="header-account" href="./auth.html"
+            >Войти/Регистрация</a
+          >
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="./">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="./about.html">О бренде</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="./blog.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="./inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="./"
+          ><img src="./assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="./">Главная</a></li>
+          <li><a class="header-menu-link" href="./about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="./blog.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="./delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./auth.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="./cart.html" aria-current="page">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="catalog container">
+      <nav class="catalog-breadcrumbs" aria-label="Хлебные крошки">
+        <ol><li><a href="./">Главная</a></li><li aria-current="page">Настольные рэки</li></ol>
+      </nav>
+      <header class="catalog-header">
+        <h1 class="page-title">Настольные рэки</h1>
+        <p class="catalog-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+      </header>
+      <div class="catalog-toolbar">
+        <p class="catalog-count">Показаны все (8)</p>
+        <div class="catalog-sort">
+          <label for="catalog-sort">Сортировать</label>
+          <select id="catalog-sort" name="sort">
+            <option value="popularity">По популярности</option>
+            <option value="rating">По рейтингу</option>
+            <option value="newest" selected>По новизне</option>
+            <option value="price-asc">По возрастанию цены</option>
+            <option value="price-desc">По убыванию цены</option>
+          </select>
+        </div>
+      </div>
+      <!-- Демонстрационный ассортимент: фотографии отдельных моделей будут заменены при наполнении каталога. -->
+      <ul class="catalog-grid" aria-label="Настольные рэки">
+          <li class="catalog-card" data-price="15000" data-position="0" data-name="Studio Module TR-122U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR-122U настольный рэк">
+              <img class="catalog-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-122U настольный рэк" width="480" height="480" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR-122U настольный рэк</a></h2>
+              <p class="catalog-card-price">15 000 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR-122U настольный рэк">В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-card" data-price="12500" data-position="1" data-name="Studio Module TR-102U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR-102U настольный рэк">
+              <img class="catalog-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-102U настольный рэк" width="480" height="480" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR-102U настольный рэк</a></h2>
+              <p class="catalog-card-price">12 500 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR-102U настольный рэк">В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-card" data-price="10000" data-position="2" data-name="Studio Module TR-82U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR-82U настольный рэк">
+              <img class="catalog-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-82U настольный рэк" width="480" height="480" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR-82U настольный рэк</a></h2>
+              <p class="catalog-card-price">10 000 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR-82U настольный рэк">В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-card" data-price="8000" data-position="3" data-name="Studio Module TR-62U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR-62U настольный рэк">
+              <img class="catalog-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-62U настольный рэк" width="480" height="480" loading="lazy" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR-62U настольный рэк</a></h2>
+              <p class="catalog-card-price">8 000 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR-62U настольный рэк">В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-card" data-price="5400" data-position="4" data-name="Studio Module TR-42U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR-42U настольный рэк">
+              <img class="catalog-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-42U настольный рэк" width="480" height="480" loading="lazy" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR-42U настольный рэк</a></h2>
+              <p class="catalog-card-price">5 400 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR-42U настольный рэк">В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-card" data-price="3900" data-position="5" data-name="Studio Module TR-22U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR-22U настольный рэк">
+              <img class="catalog-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-22U настольный рэк" width="480" height="480" loading="lazy" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR-22U настольный рэк</a></h2>
+              <p class="catalog-card-price">3 900 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR-22U настольный рэк">В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-card" data-price="4900" data-position="6" data-name="Studio Module TR22-4U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR22-4U настольный рэк">
+              <img class="catalog-image" src="./assets/images/708b971a8761913f3507d395cec829f56b8ea917.png" alt="Studio Module TR22-4U настольный рэк" width="480" height="480" loading="lazy" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR22-4U настольный рэк</a></h2>
+              <p class="catalog-card-price">4 900 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR22-4U настольный рэк">В корзину</a>
+            </div>
+          </li>
+          <li class="catalog-card" data-price="6900" data-position="7" data-name="Studio Module TR22-6U настольный рэк">
+            <a class="catalog-image-link" href="./product.html" aria-label="Studio Module TR22-6U настольный рэк">
+              <img class="catalog-image" src="./assets/images/708b971a8761913f3507d395cec829f56b8ea917.png" alt="Studio Module TR22-6U настольный рэк" width="480" height="480" loading="lazy" />
+            </a>
+            <div class="catalog-card-content">
+              <h2 class="catalog-card-title"><a href="./product.html">Studio Module TR22-6U настольный рэк</a></h2>
+              <p class="catalog-card-price">6 900 ₽</p>
+              <p class="catalog-card-description">Настольный рэк для размещения необходимой студийной техники рядом с рабочим местом. Подходит для аккуратной организации оборудования в домашней или проектной студии.</p>
+              <a class="catalog-add" href="./cart.html" aria-label="В корзину: Studio Module TR22-6U настольный рэк">В корзину</a>
+            </div>
+          </li>
+      </ul>
+      <p class="catalog-status" role="status" aria-live="polite"></p>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="./">
+            <img
+              class="footer-logo-image"
+              src="./assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./blog.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>

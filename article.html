@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мониторы или наушники? Где начинать сведение и запись — Studio Module</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/article.css" />
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/article.js" defer></script>
+    <meta name="description" content="Мониторы или наушники для домашней студии: сравнение, рекомендации по записи и сведению, практический план для ограниченного бюджета." />
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="./assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="./contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="./delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="./" class="header-logo">
+            <img src="./assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="./cart.html"
+            ><img src="./assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="./auth.html">Войти/Регистрация</a>
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="./">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="./about.html">О бренде</a>
+              </li>
+              <li>
+                <a
+                  class="active header-nav-link"
+                  href="./blog.html"
+                  aria-current="page"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="./inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="./"
+          ><img src="./assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="./">Главная</a></li>
+          <li><a class="header-menu-link" href="./about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="./blog.html" aria-current="page"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="./delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./auth.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="./cart.html">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="blog-article container">
+      <div class="article-main">
+        <nav class="article-breadcrumbs" aria-label="Хлебные крошки">
+          <ol><li><a href="./">Главная</a></li><li><a href="./blog.html">Домашняя студия</a></li><li aria-current="page">Мониторы или наушники? Где начинать сведение и запись, если бюджет ограничен</li></ol>
+        </nav>
+        <article aria-labelledby="article-title">
+          <header class="article-header">
+            <a class="article-category" href="./blog.html?category=home-studio">Домашняя студия</a>
+            <h1 class="article-title" id="article-title">Мониторы или наушники? Где начинать сведение и запись, если бюджет ограничен</h1>
+            <div class="article-meta"><time datetime="2026-08-05">05.08.2026</time><span>admin</span><a href="#comments">Нет комментариев</a><time datetime="10:00">10:00</time></div>
+          </header>
+          <img class="article-cover" src="./assets/images/1a68051358853f5e4ac6263c0b4046acaec2bf2c.png" alt="Рабочее место домашней студии с мониторами, наушниками и MIDI-клавиатурой" width="1200" height="526" />
+          <div class="article-content">
+            <p>Из этой статьи вы узнаете, на каком оборудовании стоит начать сведение и запись своей музыки, если бюджет ограничен. Мы разберём сильные и слабые стороны мониторов и наушников, дадим практические советы по работе в стеснённых финансовых условиях и объясним, как сделать осознанный выбор, который поможет развивать вашу домашнюю студию в духе Studio Module — эффективно, грамотно и без лишних трат.</p>
+            <nav class="article-toc" aria-labelledby="article-toc-title">
+              <h2 id="article-toc-title">Содержание</h2>
+              <ol>
+                <li><a href="#difference">Основное противостояние: наушники против мониторов</a></li>
+                <li><a href="#comparison">Сравнение: наушники против мониторов для старта</a></li>
+                <li><a href="#workflow">Где что использовать? Рекомендации по этапам работы</a><ol><li><a href="#recording">Запись (трекинг)</a></li><li><a href="#mixing">Сведение</a></li><li><a href="#mastering">Мастеринг (финальная полировка)</a></li></ol></li>
+                <li><a href="#budget">Практическая стратегия для ограниченного бюджета</a></li>
+                <li><a href="#checklist">Чек-лист: подготовка к работе</a></li>
+                <li><a href="#avoid">Чего следует избегать?</a></li>
+              </ol>
+            </nav>
+            <h2 id="difference">Основное противостояние: наушники против мониторов</h2>
+            <p>Прежде чем выбрать инструмент для работы со звуком, нужно понять фундаментальные различия в том, как мы его воспринимаем. Это не вопрос «что лучше», а вопрос «что для чего».</p>
+            <p><strong>Студийные мониторы</strong> — это акустические системы, созданные для максимально честного, «неприкрашенного» воспроизведения звука. Они не добавляют желательных басов или приятных высоких, как это делают бытовые колонки. Их задача — показать вам огрехи в сведении, чтобы вы могли их исправить.</p>
+            <p><strong>Студийные наушники</strong> — это ваш персональный и детализированный контроль над звуком. Они полностью исключают вас из акустики помещения, позволяя услышать мельчайшие детали, которые могут теряться при прослушивании в колонках.</p>
+            <p>Давайте сравним эти подходы для старта при ограниченном бюджете.</p>
+            <h2 id="comparison">Сравнение: наушники против мониторов для старта</h2>
+            <div class="article-table-wrap" role="region" aria-label="Сравнение наушников и мониторов" tabindex="0">
+              <table class="article-table">
+                <thead><tr><th scope="col">Критерий</th><th scope="col">Студийные наушники</th><th scope="col">Студийные мониторы</th><th scope="col">Что важнее для старта?</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">Стоимость входа</th><td><strong>Низкая.</strong> За 8 000–15 000 руб. можно купить хорошие модели для начальной работы.</td><td><strong>Высокая.</strong> Качественная пара мониторов обойдётся значительно дороже.</td><td><strong>Наушники.</strong> Они позволяют начать работу с серьёзным инструментом без крупных вложений.</td></tr>
+                  <tr><th scope="row">Влияние акустики помещения</th><td><strong>Нулевое.</strong> Звук формируется непосредственно у уха. Вы слышите трек, а не особенности комнаты.</td><td><strong>Критичное.</strong> В неподготовленной комнате отражения и резонансы искажают звучание.</td><td><strong>Наушники.</strong> Они решают главную проблему начинающих — отсутствие акустической обработки.</td></tr>
+                  <tr><th scope="row">Точность передачи картины (стереобаза)</th><td><strong>Искажённая.</strong> Звук «внутри головы». Сложнее объективно оценить панорамирование, глубину пространства и реверберацию.</td><td><strong>Естественная.</strong> Правильно расставленные мониторы создают перед вами стабильную звуковую сцену.</td><td><strong>Мониторы.</strong> При подходящих условиях лучше оценивать положение инструментов в пространстве.</td></tr>
+                  <tr><th scope="row">Детализация и выявление проблем</th><td><strong>Высокая.</strong> Позволяют услышать мельчайшие шумы, щелчки, дыхание и ошибки в записи.</td><td><strong>Умеренная.</strong> Мелкие дефекты могут маскироваться. Зато хорошо слышны проблемы с балансом частот и динамикой.</td><td><strong>Наушники.</strong> Незаменимы для чистовой правки записи, поиска щелчков, работы с дыханием и шумами.</td></tr>
+                  <tr><th scope="row">Усталость при долгой работе</th><td><strong>Высокая.</strong> Длительное использование на высокой громкости утомляет слух и может быть вредным.</td><td><strong>Ниже при умеренной громкости.</strong> Звук распространяется естественно, что позволяет работать дольше без перегрузки слуха.</td><td><strong>Мониторы.</strong> Важно делать перерывы, но с мониторами комфортнее работать в длительных сессиях.</td></tr>
+                  <tr><th scope="row">Возможность записи (трекинг)</th><td><strong>Обязательны.</strong> Для записи вокала или любого акустического инструмента, чтобы звук из колонок не попал в микрофон.</td><td>Невозможно при одновременно открытых микрофонах из-за акустической обратной связи.</td><td><strong>Наушники.</strong> Без них не обойтись, если вы планируете запись.</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h2 id="workflow">Где что использовать? Рекомендации по этапам работы</h2>
+            <h3 id="recording">Запись (трекинг)</h3>
+            <ul><li><strong>Безусловный выбор: наушники.</strong> Это не обсуждается. Закрытые наушники обеспечивают изоляцию и предотвращают «затекание» звука из наушников в микрофон. Даже с самой парой наушников вы сможете профессионально записать вокал, гитару или речь для подкаста.</li></ul>
+            <h3 id="mixing">Сведение</h3>
+            <p>Здесь нужен гибридный подход, особенно на старте. Используйте хорошо знакомый <em>референс-трек</em>, чтобы сравнивать тональный баланс и глубину пространства.</p>
+            <ul>
+              <li><strong>Баланс и панорамирование (70% работы): мониторы в хорошо знакомой комнате.</strong> Если у вас уже есть мониторы и вы уверены, как звучит в вашей комнате референс-трек, начинайте баланс здесь. Если мониторов нет — начните с наушников, но будьте осторожны с экстремальным панорамированием.</li>
+              <li><strong>Детальная работа и чистка (30% работы): наушники.</strong> Возьмите их, чтобы:<ul><li>Выявить и убрать посторонние шумы, щелчки, лишние согласные (сибилянты) на вокале.</li><li>Точно настроить параметры реверберации и дилея.</li><li>Проверить, как звучат крайние высокие и низкие частоты.</li></ul></li>
+            </ul>
+            <h3 id="mastering">Мастеринг (финальная полировка)</h3>
+            <p>На этом этапе критически важна точность. <strong>Без акустически подготовленной комнаты и качественных мониторов за него лучше не браться.</strong> Для начинающего безопаснее отдать эту задачу профессионалу или использовать автоматизированные сервисы. Однако оценку результата всё равно стоит делать на нескольких системах.</p>
+            <h2 id="budget">Практическая стратегия для ограниченного бюджета</h2>
+            <p>Исходя из сравнения, для большинства начинающих оптимальна следующая последовательность вложений:</p>
+            <ol class="article-steps">
+              <li><p><strong>Купите одну пару качественных студийных наушников.</strong> Это ваш универсальный инструмент №1 для всего: записи, сведения и проверки деталей. Рассмотрите модели с закрытой конструкцией для записи и открытые для более комфортного сведения.</p></li>
+              <li><p><strong>Настройте своё рабочее место и изучайте акустику.</strong> Даже без мониторов слушайте любимую музыку и свои миксы на обычных колонках при умеренной громкости. Так вы будете замечать разницу в звучании, запоминать, как звучат знакомые треки. Если позже поставите мониторы, вы уже будете иметь представление об отражениях вашего помещения.</p></li>
+              <li><p><strong>Постепенно откладывайте средства для мониторов.</strong> Когда бюджет позволит, сначала <strong>инвестируйте в базовую акустику</strong> (ковёр, акустические панели и басовые ловушки в первых отражениях), и только потом покупайте недорогую, но качественную пару мониторов. К этому моменту ваши уши и опыт уже будут готовы к следующему шагу.</p></li>
+            </ol>
+            <h3>Как распределить задачи между системами?</h3>
+            <dl class="article-progression-list">
+              <div><dt>Запись → закрытые наушники</dt><dd>Изолируйте фонограмму от микрофона и подберите комфортную громкость для исполнителя.</dd></div>
+              <div><dt>Монтаж → наушники</dt><dd>Последовательно проверяйте стыки, дыхание и тихие участки записи.</dd></div>
+              <div><dt>Баланс → мониторы и повторная проверка в наушниках</dt><dd>Оцените общую картину, затем вернитесь к деталям и сравнению с референсом.</dd></div>
+            </dl>
+            <h3>План проверки готового микса</h3>
+            <div class="article-table-wrap" role="region" aria-label="План проверки микса" tabindex="0">
+              <table class="article-table"><thead><tr><th scope="col">Система</th><th scope="col">Что проверяем</th><th scope="col">На что обратить внимание</th></tr></thead><tbody>
+                <tr><th scope="row">Наушники</th><td>Детали, шумы и монтаж</td><td>Щелчки, сибилянты и хвосты эффектов</td></tr>
+                <tr><th scope="row">Мониторы</th><td>Баланс и глубину</td><td>Вокал, бас и положение инструментов в пространстве</td></tr>
+                <tr><th scope="row">Бытовая акустика</th><td>Переносимость микса</td><td>Читается ли основная идея композиции</td></tr>
+              </tbody></table>
+            </div>
+            <p class="article-table-note"><strong>Примечание:</strong> сравнивайте результат с референсом на одинаковой громкости. Каждую систему используйте как дополнительную точку контроля.</p>
+            <h2 id="checklist">Чек-лист: подготовка к работе</h2>
+            <ul class="article-checklist"><li>Я выбрал референс и выровнял его громкость со своим треком.</li><li>Я проверил запись на шумы и щелчки в наушниках.</li><li>Я оценил баланс инструментов и разборчивость вокала.</li><li>Я проверил микс в моно и на нескольких системах.</li><li>Я сделал перерыв и вернулся к прослушиванию со свежим слухом.</li></ul>
+            <h2 id="avoid">Чего следует избегать?</h2>
+            <ul><li><strong>Покупать дешёвые «мультимедийные» мониторы за 10 000 руб.</strong> Их качество часто хуже, чем у хороших наушников за те же деньги, и они всё равно потребуют акустической коррекции.</li><li><strong>Доверять сведению, сделанному только в наушниках.</strong> Всегда проверяйте микс на максимально разных образцах: в машине, на Bluetooth-колонке, в смартфоне, на телевизоре. Если микс звучит достойно везде — вы на правильном пути.</li><li><strong>Работать на высокой громкости.</strong> Это быстро утомляет слух и приводит к неверным субъективным оценкам, особенно в наушниках.</li></ul>
+            <p><strong>Заключение:</strong> если бюджет сильно ограничен, ваш лучший старт — <strong>качественные студийные наушники.</strong> Они дадут вам точный контроль для записи и 80% необходимой информации для сведения. С их помощью вы сможете создавать конкурентоспособную музыку, пока копите на следующую ступень — акустическую подготовку комнаты и студийные мониторы. Помните, что студия Studio Module растёт вместе с вами, начиная с небольшого функционального рабочего места и двигаясь к профессиональным решениям.</p>
+            <h3>Остались ли у вас вопросы?</h3>
+            <p>Сомневаетесь, на чём с ограниченным бюджетом — наушниках или мониторах — начать работу? Поделитесь своим опытом в комментариях: с какой системы вы начинали и что помогло вам улучшить результат.</p>
+          </div>
+        </article>
+        <nav class="article-pagination" aria-label="Навигация между статьями">
+          <a href="./article.html"><span class="article-pagination-label">Предыдущая</span>Зачем нужна правильная мебель для студии звукозаписи?</a>
+          <a href="./article.html"><span class="article-pagination-label">Следующая</span>Аккорды для своих песен: 25 популярных последовательностей</a>
+        </nav>
+        <section class="article-comments" id="comments" aria-labelledby="article-comments-title">
+          <h2 id="article-comments-title">Добавить комментарий</h2>
+          <p class="article-comments-note" id="article-comments-note">Ваш адрес email не будет опубликован. Обязательные поля отмечены *.</p>
+          <form class="article-comment-form" aria-describedby="article-comments-note">
+            <div class="article-comment-row">
+              <label class="article-comment-field" for="comment-name">Имя *<input id="comment-name" name="name" autocomplete="name" required /></label>
+              <label class="article-comment-field" for="comment-email">Email *<input id="comment-email" name="email" type="email" autocomplete="email" required /></label>
+            </div>
+            <label class="article-comment-field" for="comment">Комментарий *<textarea id="comment" name="comment" required></textarea></label>
+            <label class="article-comment-remember"><input type="checkbox" name="remember" /><span>Сохранить моё имя и email в этом браузере для последующих моих комментариев.</span></label>
+            <button class="article-comment-submit" type="submit">Отправить комментарий</button>
+            <p class="article-comment-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+      <aside class="article-sidebar" aria-label="Товары и другие статьи">
+        <section class="article-sidebar-panel" aria-labelledby="article-products-title">
+          <p class="article-sidebar-kicker">Studio Module</p><h2 class="article-sidebar-title" id="article-products-title">Товары</h2>
+          <!-- Демонстрационные товары из текущего каталога. -->
+          <ul class="article-products">
+            <li class="article-product">
+              <a href="./product.html" aria-label="Studio Module TR-122U настольный рэк"><img class="article-product-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-122U настольный рэк" width="60" height="60" loading="lazy" /></a>
+              <div>
+                <h3 class="article-product-title"><a href="./product.html">Studio Module TR-122U настольный рэк</a></h3>
+                <p class="article-product-description">Студийный рэк для размещения необходимой техники</p>
+                <p class="article-product-price">15 000 ₽ <a class="article-product-link" href="./product.html">Смотреть товар →</a></p>
+              </div>
+            </li>
+            <li class="article-product">
+              <a href="./product.html" aria-label="Studio Module TR-102U настольный рэк"><img class="article-product-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-102U настольный рэк" width="60" height="60" loading="lazy" /></a>
+              <div>
+                <h3 class="article-product-title"><a href="./product.html">Studio Module TR-102U настольный рэк</a></h3>
+                <p class="article-product-description">Студийный рэк для размещения необходимой техники</p>
+                <p class="article-product-price">12 500 ₽ <a class="article-product-link" href="./product.html">Смотреть товар →</a></p>
+              </div>
+            </li>
+            <li class="article-product">
+              <a href="./product.html" aria-label="Studio Module TR-82U настольный рэк"><img class="article-product-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-82U настольный рэк" width="60" height="60" loading="lazy" /></a>
+              <div>
+                <h3 class="article-product-title"><a href="./product.html">Studio Module TR-82U настольный рэк</a></h3>
+                <p class="article-product-description">Студийный рэк для размещения необходимой техники</p>
+                <p class="article-product-price">10 000 ₽ <a class="article-product-link" href="./product.html">Смотреть товар →</a></p>
+              </div>
+            </li>
+            <li class="article-product">
+              <a href="./product.html" aria-label="Studio Module TR-62U настольный рэк"><img class="article-product-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-62U настольный рэк" width="60" height="60" loading="lazy" /></a>
+              <div>
+                <h3 class="article-product-title"><a href="./product.html">Studio Module TR-62U настольный рэк</a></h3>
+                <p class="article-product-description">Студийный рэк для размещения необходимой техники</p>
+                <p class="article-product-price">8 000 ₽ <a class="article-product-link" href="./product.html">Смотреть товар →</a></p>
+              </div>
+            </li>
+            <li class="article-product">
+              <a href="./product.html" aria-label="Studio Module TR-42U настольный рэк"><img class="article-product-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-42U настольный рэк" width="60" height="60" loading="lazy" /></a>
+              <div>
+                <h3 class="article-product-title"><a href="./product.html">Studio Module TR-42U настольный рэк</a></h3>
+                <p class="article-product-description">Студийный рэк для размещения необходимой техники</p>
+                <p class="article-product-price">5 400 ₽ <a class="article-product-link" href="./product.html">Смотреть товар →</a></p>
+              </div>
+            </li>
+            <li class="article-product">
+              <a href="./product.html" aria-label="Studio Module TR-22U настольный рэк"><img class="article-product-image" src="./assets/images/527f0615e6b514dcae48767b565e88564336e390.png" alt="Studio Module TR-22U настольный рэк" width="60" height="60" loading="lazy" /></a>
+              <div>
+                <h3 class="article-product-title"><a href="./product.html">Studio Module TR-22U настольный рэк</a></h3>
+                <p class="article-product-description">Студийный рэк для размещения необходимой техники</p>
+                <p class="article-product-price">3 900 ₽ <a class="article-product-link" href="./product.html">Смотреть товар →</a></p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="article-sidebar-panel" aria-labelledby="article-related-title">
+          <p class="article-sidebar-kicker">Читать далее</p><h2 class="article-sidebar-title" id="article-related-title">Другие статьи</h2>
+          <ul class="article-related-posts"><li class="article-related"><a href="./article.html" aria-label="Аккорды для своих песен: 25 популярных последовательностей"><img class="article-related-image" src="./assets/images/d025d859eed09db75d0503b2aa6d748de7121e20.png" alt="" width="60" height="60" loading="lazy" /></a><div><span class="article-related-meta">Творчество · 04.06.2026</span><h3 class="article-related-title"><a href="./article.html">Аккорды для своих песен: 25 популярных последовательностей</a></h3></div></li>
+<li class="article-related"><a href="./article.html" aria-label="Как записать барабаны дома: живая установка или электронная?"><img class="article-related-image" src="./assets/images/1b5774243e916546a7b7aa8357537699d1c88831.png" alt="" width="60" height="60" loading="lazy" /></a><div><span class="article-related-meta">Звукозапись · 25.05.2026</span><h3 class="article-related-title"><a href="./article.html">Как записать барабаны дома: живая установка или электронная?</a></h3></div></li>
+<li class="article-related"><a href="./article.html" aria-label="Как обустроить домашнюю студию с нуля: Пошаговый гайд"><img class="article-related-image" src="./assets/images/d025d859eed09db75d0503b2aa6d748de7121e20.png" alt="" width="60" height="60" loading="lazy" /></a><div><span class="article-related-meta">Домашняя студия · 27.03.2026</span><h3 class="article-related-title"><a href="./article.html">Как обустроить домашнюю студию с нуля: Пошаговый гайд</a></h3></div></li>
+<li class="article-related"><a href="./article.html" aria-label="Зачем нужна правильная мебель для студии звукозаписи?"><img class="article-related-image" src="./assets/images/1b5774243e916546a7b7aa8357537699d1c88831.png" alt="" width="60" height="60" loading="lazy" /></a><div><span class="article-related-meta">Домашняя студия · 19.06.2026</span><h3 class="article-related-title"><a href="./article.html">Зачем нужна правильная мебель для студии звукозаписи?</a></h3></div></li></ul>
+        </section>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="./">
+            <img
+              class="footer-logo-image"
+              src="./assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./blog.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>

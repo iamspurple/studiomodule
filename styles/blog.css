@@ -111,6 +111,7 @@
 
 .studio-post {
   min-width: 0;
+  scroll-margin-top: 140px;
 }
 
 .studio-card {

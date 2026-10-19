@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление заказа — Studio Module</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/checkout.css" />
+    <script src="./scripts/header.js" defer></script>
+    <script src="./scripts/checkout.js" defer></script>
+  </head>
+  <body id="top">
+    <div class="header-top">
+      <div class="header-top-wrapper container">
+        <a class="header-top-phone" href="tel:+79250009892">
+          <img
+            class="header-top-phone-icon"
+            src="./assets/icons/phone.svg"
+            alt=""
+          />
+          <span>+7 925 000-98-92</span>
+        </a>
+        <nav class="header-top-nav">
+          <a class="header-top-link" href="./contacts.html">Контакты и Сервис</a>
+          <a class="header-top-link" href="./delivery.html">Доставка и Оплата</a>
+        </nav>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header-wrapper container">
+        <div class="header-left">
+          <a href="./" class="header-logo">
+            <img src="./assets/icons/logo.svg" alt="Studio Module" />
+          </a>
+          <div class="header-catalog">
+            <button
+              class="header-catalog-btn"
+              type="button"
+              aria-expanded="false"
+              aria-controls="header-catalog-menu"
+            >
+              Каталог товаров
+            </button>
+            <nav
+              class="header-catalog-nav"
+              id="header-catalog-menu"
+              aria-label="Категории каталога"
+            >
+              <ul>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Напольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Настольные рэки
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Подставки под акустику
+                  </a>
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Приставные тумбы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Студийные столы</a
+                  >
+                </li>
+                <li class="header-catalog-item">
+                  <a class="header-catalog-link" href="./catalog.html">
+                    Хранение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-search">
+            <input
+              class="header-search-input"
+              type="search"
+              name=""
+              id=""
+              placeholder="Поиск по товарам"
+              aria-label="Поиск по товарам"
+            />
+          </div>
+        </div>
+        <div class="header-right">
+          <a class="header-cart" href="./cart.html" aria-current="page"
+            ><img src="./assets/icons/cart.svg" alt="" /><span
+              class="header-cart-label"
+              >Корзина</span
+            >
+            <span class="header-cart-quantity">1</span></a
+          >
+          <a class="header-account" href="./auth.html"
+            >Войти/Регистрация</a
+          >
+          <button
+            class="header-menu-toggle"
+            type="button"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="header-menu"
+            aria-haspopup="dialog"
+          ></button>
+        </div>
+        <div class="header-bottom">
+          <nav class="header-nav">
+            <ul class="header-nav-list">
+              <li>
+                <a class="header-nav-link" href="./">Главная</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="./about.html">О бренде</a>
+              </li>
+              <li>
+                <a class="header-nav-link" href="./blog.html"
+                  >О домашней студии</a
+                >
+              </li>
+              <li>
+                <a class="header-nav-link" href="./inspiration.html">
+                  Твоё вдохновение
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <dialog class="header-menu" id="header-menu" aria-label="Меню сайта">
+      <div class="header-menu-heading">
+        <a class="header-logo" href="./"
+          ><img src="./assets/icons/logo.svg" alt="Studio Module"
+        /></a>
+        <button
+          class="header-menu-close"
+          type="button"
+          aria-label="Закрыть меню"
+          autofocus
+        ></button>
+      </div>
+      <div class="header-menu-search">
+        <div class="header-search">
+          <input
+            class="header-search-input"
+            type="search"
+            placeholder="Поиск по сайту…"
+            aria-label="Поиск по сайту"
+          />
+        </div>
+      </div>
+      <nav class="header-menu-nav" aria-label="Навигация по сайту">
+        <ul>
+          <li><a class="header-menu-link" href="./">Главная</a></li>
+          <li><a class="header-menu-link" href="./about.html">О бренде</a></li>
+          <li>
+            <a class="header-menu-link" href="./blog.html"
+              >О домашней студии</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./inspiration.html"
+              >Твоё вдохновение</a
+            >
+          </li>
+          <li>
+            <details class="header-menu-catalog">
+              <summary class="header-menu-link">Каталог товаров</summary>
+              <ul>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Напольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Настольные рэки</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Подставки под акустику</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Приставные тумбы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html"
+                    >Студийные столы</a
+                  >
+                </li>
+                <li>
+                  <a class="header-menu-link" href="./catalog.html">Хранение</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <a class="header-menu-link" href="./delivery.html"
+              >Доставка и Оплата</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./contacts.html"
+              >Контакты и Сервис</a
+            >
+          </li>
+          <li>
+            <a class="header-menu-link" href="./auth.html"
+              >Войти / Регистрация</a
+            >
+          </li>
+          <li><a class="header-menu-link" href="./cart.html" aria-current="page">Корзина</a></li>
+        </ul>
+      </nav>
+      <div class="header-menu-contacts">
+        <a href="tel:+79250009892">+7 925 000-98-92</a>
+        <a href="mailto:info@studiomodule.ru">info@studiomodule.ru</a>
+      </div>
+    </dialog>
+    <main class="checkout container">
+      <h1 class="page-title checkout-title">Оформление заказа</h1>
+      <form class="checkout-layout" id="checkout-form" method="post">
+        <div class="checkout-main">
+          <section class="checkout-section" aria-labelledby="checkout-contact-title">
+            <h2 class="checkout-section-title" id="checkout-contact-title">Контактная информация</h2>
+            <div class="checkout-fields">
+                <div class="checkout-field checkout-field--wide">
+                  <label for="checkout-email">Email</label>
+                  <input id="checkout-email" name="email" type="email" autocomplete="email" required maxlength="254" data-validate />
+                  <p class="checkout-error" id="checkout-email-error" hidden></p>
+                </div>
+            </div>
+            <p class="checkout-hint">Вы оформляете заказ как гость.</p>
+            <div class="checkout-checkboxes">
+              <label class="checkout-checkbox"><input type="checkbox" name="create-account" aria-controls="checkout-account-fields" aria-expanded="false" /><span>Создать учётную запись в Studio Module</span></label>
+              <div class="checkout-account-fields" id="checkout-account-fields" hidden>
+                <div class="checkout-field">
+                  <label for="checkout-password">Пароль для учётной записи</label>
+                  <input id="checkout-password" name="password" type="password" autocomplete="new-password" minlength="8" disabled data-validate aria-describedby="checkout-password-hint" />
+                  <p class="checkout-hint" id="checkout-password-hint">Не менее 8 символов.</p>
+                  <p class="checkout-error" id="checkout-password-error" hidden></p>
+                </div>
+              </div>
+              <label class="checkout-checkbox"><input type="checkbox" name="newsletter" /><span>Согласие на получение электронных писем о скидках и информации о товарах</span></label>
+            </div>
+          </section>
+          <section class="checkout-section" aria-labelledby="checkout-address-title">
+            <h2 class="checkout-section-title" id="checkout-address-title">Адрес доставки</h2>
+            <div class="checkout-fields">
+                <div class="checkout-field">
+                  <label for="checkout-first-name">Имя</label>
+                  <input id="checkout-first-name" name="first-name" type="text" autocomplete="given-name" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-first-name-error" hidden></p>
+                </div>
+                <div class="checkout-field">
+                  <label for="checkout-last-name">Фамилия</label>
+                  <input id="checkout-last-name" name="last-name" type="text" autocomplete="family-name" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-last-name-error" hidden></p>
+                </div>
+                <div class="checkout-field checkout-field--wide">
+                  <label for="checkout-country">Страна / регион</label>
+                  <input id="checkout-country" name="country" type="text" autocomplete="country-name" value="Россия" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-country-error" hidden></p>
+                </div>
+                <div class="checkout-field checkout-field--wide">
+                  <label for="checkout-address">Адрес</label>
+                  <input id="checkout-address" name="address" type="text" autocomplete="address-line1" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-address-error" hidden></p>
+                </div>
+                <div class="checkout-field checkout-field--wide">
+                  <label for="checkout-apartment">Квартира, строение и другая дополнительная информация</label>
+                  <input id="checkout-apartment" name="apartment" type="text" autocomplete="address-line2" maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-apartment-error" hidden></p>
+                </div>
+                <div class="checkout-field">
+                  <label for="checkout-city">Населённый пункт</label>
+                  <input id="checkout-city" name="city" type="text" autocomplete="address-level2" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-city-error" hidden></p>
+                </div>
+                <div class="checkout-field">
+                  <label for="checkout-region">Область / район</label>
+                  <input id="checkout-region" name="region" type="text" autocomplete="address-level1" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-region-error" hidden></p>
+                </div>
+                <div class="checkout-field">
+                  <label for="checkout-postcode">Почтовый индекс</label>
+                  <input id="checkout-postcode" name="postcode" type="text" autocomplete="postal-code" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-postcode-error" hidden></p>
+                </div>
+                <div class="checkout-field">
+                  <label for="checkout-phone">Телефон</label>
+                  <input id="checkout-phone" name="phone" type="tel" autocomplete="tel" required maxlength="150" data-validate />
+                  <p class="checkout-error" id="checkout-phone-error" hidden></p>
+                </div>
+            </div>
+            <label class="checkout-checkbox checkout-billing"><input type="checkbox" name="same-billing-address" /><span>Использовать этот адрес для выставления счетов</span></label>
+          </section>
+          <fieldset class="checkout-section checkout-shipping">
+            <legend class="checkout-section-title">Параметры доставки</legend>
+            <div class="checkout-shipping-options">
+              <label class="checkout-shipping-option"><input type="radio" name="shipping" value="russia" data-price="2300" checked /><span>Доставка по России</span><strong>2 300 ₽</strong></label>
+              <label class="checkout-shipping-option"><input type="radio" name="shipping" value="moscow" data-price="1500" /><span>Доставка по Москве и МО</span><strong>1 500 ₽</strong></label>
+            </div>
+          </fieldset>
+          <section class="checkout-section" aria-labelledby="checkout-payment-title">
+            <h2 class="checkout-section-title" id="checkout-payment-title">Способы оплаты</h2>
+            <p class="checkout-payment-placeholder">Способ оплаты будет подключён на этапе разработки.</p>
+          </section>
+          <div class="checkout-section checkout-note-section">
+            <details class="checkout-disclosure checkout-note">
+              <summary>Добавить примечание к заказу</summary>
+              <div class="checkout-disclosure-content">
+                <div class="checkout-note-field checkout-field">
+                  <label for="checkout-note">Примечание к заказу</label>
+                  <textarea id="checkout-note" name="note" rows="3" maxlength="2000"></textarea>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+        <aside class="checkout-summary" aria-labelledby="checkout-summary-title">
+          <h2 class="checkout-section-title" id="checkout-summary-title">Детали заказа</h2>
+          <ul class="checkout-products" aria-label="Товары в заказе">
+            <li class="checkout-product">
+              <img src="./assets/images/6440ef49ea5591a6b184c13f75a9711495a9ec1e.png" alt="" width="56" height="50" />
+              <h3>Studio Module TAST</h3>
+              <p>6 560 ₽</p>
+            </li>
+          </ul>
+          <details class="checkout-disclosure checkout-coupon">
+            <summary>Добавить купоны</summary>
+            <div class="checkout-disclosure-content">
+              <div class="checkout-coupon-fields">
+                <label for="checkout-coupon">Код купона</label>
+                <input id="checkout-coupon" name="coupon" type="text" placeholder="Введите код купона" maxlength="50" />
+                <button class="checkout-coupon-apply" type="button">Применить</button>
+                <p class="checkout-coupon-status" role="status" hidden></p>
+              </div>
+            </div>
+          </details>
+          <dl class="checkout-totals" aria-live="polite" aria-atomic="true">
+            <div><dt>Подытог</dt><dd>6 560 ₽</dd></div>
+            <div class="checkout-discount" hidden><dt>Скидка по купону</dt><dd data-checkout-discount></dd></div>
+            <div><dt>Доставка</dt><dd data-checkout-shipping>2 300 ₽</dd></div>
+            <div class="checkout-grand-total"><dt>Итого</dt><dd data-checkout-total>8 860 ₽</dd></div>
+          </dl>
+        </aside>
+        <div class="checkout-submit-area">
+          <label class="checkout-checkbox checkout-consent"><input id="checkout-consent" type="checkbox" name="consent" required data-validate /><span>Я прочитал(а) и соглашаюсь с <a href="./delivery.html">Правилами и условиями</a> и <a href="./privacy.html">Политикой конфиденциальности</a>.</span></label>
+          <p class="checkout-error" id="checkout-consent-error" hidden></p>
+          <button class="checkout-submit" type="submit">Оформить заказ</button>
+          <p class="checkout-status" role="status" hidden></p>
+        </div>
+      </form>
+    </main>
+    <footer class="footer">
+      <div class="footer-wrapper container">
+        <div class="footer-header">
+          <a class="footer-logo footer-link" href="./">
+            <img
+              class="footer-logo-image"
+              src="./assets/icons/logo-light.svg"
+              alt="Studio Module"
+            />
+          </a>
+          <p class="footer-text">
+            Функциональная мебель для тех, кто создает музыку.
+          </p>
+        </div>
+        <nav class="footer-nav" aria-labelledby="footer-information-title">
+          <h2 class="footer-title" id="footer-information-title">Информация</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./privacy.html"
+                >Политика конфиденциальности</a
+              >
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./delivery.html">Доставка и Оплата</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./warranty.html">Гарантия</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-knowledge-title">
+          <h2 class="footer-title" id="footer-knowledge-title">База знаний</h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./blog.html">Домашняя студия</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./recording.html">Звукозапись</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./connections.html">Коммутация</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./inspiration.html">Творчество</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="footer-nav" aria-labelledby="footer-customers-title">
+          <h2 class="footer-title" id="footer-customers-title">
+            Для покупателей
+          </h2>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a class="footer-link" href="./account.html">Мой аккаунт</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./cart.html">Корзина</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="./checkout.html">Оформление заказа</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer-contacts">
+          <h2 class="footer-title">Контакты</h2>
+          <ul class="footer-list">
+            <li class="footer-item">ООО «Большой Музыкальный»</li>
+            <li class="footer-item">Россия, г. Москва</li>
+            <li class="footer-item">Доставляем по России</li>
+            <li class="footer-item">
+              <a class="footer-link" href="tel:+79250009892">+79250009892</a>
+            </li>
+            <li class="footer-item">
+              <a class="footer-link" href="mailto:info@studiomodule.ru"
+                >info@studiomodule.ru</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">Copyright StudioModule 2025</p>
+        </div>
+      </div>
+    </footer>
+    <a class="back-to-top" href="#top" aria-label="Наверх, к началу страницы">
+      <span>Наверх</span>
+      <span class="back-to-top-icon" aria-hidden="true"></span>
+    </a>
+  </body>
+</html>
